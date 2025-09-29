@@ -56,6 +56,8 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./out/
         server-dir: ${{ secrets.FTP_SERVER_DIR }}
+        state-name: sync-state.json
+        dangerous-clean-slate: false
         exclude: |
           **/.git*
           **/.git*/**
@@ -63,7 +65,10 @@ jobs:
           **/.DS_Store
           **/Thumbs.db
           cms/**
-      continue-on-error: true
+        # ConohaWing用権限設定
+        protocol: ftp
+        port: 21
+        security: loose
 
     - name: 🎨 WordPressテーマデプロイ（存在する場合）
       if: hashFiles('wordpress-theme/**') != ''
