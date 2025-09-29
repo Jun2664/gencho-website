@@ -1,0 +1,102 @@
+name: 🚀 Deploy to Production
+
+on:
+  # コード変更時の自動デプロイ
+  push:
+    branches: [main]
+
+  # WordPress更新時の自動デプロイ
+  repository_dispatch:
+    types: [wordpress-update]
+
+  # 手動実行も可能
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'デプロイ理由'
+        required: false
+        default: '手動デプロイ'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+    - name: 📥 リポジトリをチェックアウト
+      uses: actions/checkout@v4
+
+    - name: 📦 Node.jsをセットアップ
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+
+    - name: 🔧 依存関係をインストール
+      run: npm ci
+
+    - name: 🏗️ サイトをビルド
+      run: npm run build
+      env:
+        NODE_ENV: production
+
+    - name: 📊 ビルド結果を確認
+      run: |
+        echo "📁 生成されたファイル:"
+        ls -la out/
+        echo ""
+        echo "📄 ブログページ確認:"
+        ls -la out/blog/ 2>/dev/null || echo "ブログフォルダはまだ作成されていません"
+
+    - name: 🚀 本番サーバーへデプロイ
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./out/
+        server-dir: ${{ secrets.FTP_SERVER_DIR }}
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/.DS_Store
+          **/Thumbs.db
+          cms/**
+      continue-on-error: true
+
+    - name: 🎨 WordPressテーマデプロイ（存在する場合）
+      if: hashFiles('wordpress-theme/**') != ''
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./wordpress-theme/
+        server-dir: ${{ secrets.WP_THEME_DIR }}
+        exclude: |
+          **/.git*
+          **/.git*/**
+      continue-on-error: true
+
+    - name: ✅ デプロイ完了通知
+      if: success()
+      run: |
+        echo "🎉 デプロイが正常に完了しました！"
+        echo "🌐 サイトURL: ${{ secrets.SITE_URL || 'https://gencho.site' }}"
+        echo ""
+        echo "📝 デプロイ情報:"
+        echo "- トリガー: ${{ github.event_name }}"
+        if [ "${{ github.event_name }}" == "repository_dispatch" ]; then
+          echo "- WordPressアクション: ${{ github.event.client_payload.action }}"
+          echo "- 記事タイトル: ${{ github.event.client_payload.post_title }}"
+        fi
+        if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+          echo "- 理由: ${{ github.event.inputs.reason }}"
+        fi
+
+    - name: ❌ デプロイ失敗通知
+      if: failure()
+      run: |
+        echo "💥 デプロイに失敗しました"
+        echo "ログを確認してください"
