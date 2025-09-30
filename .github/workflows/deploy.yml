@@ -55,9 +55,7 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./out/
-        server-dir: ${{ secrets.FTP_SERVER_DIR }}
-        state-name: sync-state.json
-        dangerous-clean-slate: false
+        server-dir: /public_html/gencho.site/
         exclude: |
           **/.git*
           **/.git*/**
@@ -65,10 +63,6 @@ jobs:
           **/.DS_Store
           **/Thumbs.db
           cms/**
-        # ConohaWing用権限設定
-        protocol: ftp
-        port: 21
-        security: loose
 
     - name: 🎨 WordPressテーマデプロイ（存在する場合）
       if: hashFiles('wordpress-theme/**') != ''
@@ -78,7 +72,7 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./wordpress-theme/
-        server-dir: ${{ secrets.WP_THEME_DIR }}
+        server-dir: /public_html/gencho.site/cms/wp-content/themes/gencho-corporate/
         exclude: |
           **/.git*
           **/.git*/**
