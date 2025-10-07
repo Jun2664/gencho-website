@@ -1,0 +1,60 @@
+{
+  "company": {
+    "name_ja": "現長株式会社",
+    "name_en": "Gencho Co., Ltd.",
+    "name_en_alt": "GENCHO Corporation",
+    "president": "西橋 徹",
+    "capital": "3,000千円",
+    "founded": "TODO: 未確定",
+    "employees": "TODO: 未確定"
+  },
+  "contact": {
+    "headquarters": {
+      "postal": "〒550-0013",
+      "address": "大阪府大阪市西区新町1-1-26",
+      "tel": "06-6585-9068",
+      "fax": "06-6585-9071",
+      "email": "gencho-customer@hotmail.com"
+    },
+    "branches": [
+      {"name": "大阪支店/倉庫", "address": "TODO: 詳細住所未確定"},
+      {"name": "関東支店", "address": "TODO: 詳細住所未確定"},
+      {"name": "東海支店", "address": "TODO: 詳細住所未確定"},
+      {"name": "名古屋営業所", "address": "TODO: 詳細住所未確定"},
+      {"name": "静岡営業所", "address": "TODO: 詳細住所未確定"},
+      {"name": "三重作業場/倉庫", "address": "TODO: 詳細住所未確定"}
+    ]
+  },
+  "business": {
+    "services": [
+      "基礎工事",
+      "テント上屋・テント倉庫改修",
+      "テントシート張替",
+      "建具工事・構成シャッター工事",
+      "塗装・補修工事",
+      "植栽・清掃工事"
+    ],
+    "about_text": "シートシャッター全般の計画・施工からメンテナンスまで、各メーカーに対応。必要資格を取得し、品質を追求する施工会社として、お客様のニーズに最適なソリューションを提供いたします。",
+    "keywords": ["シートシャッター", "施工", "建築工事", "メンテナンス", "テント倉庫", "建具工事"]
+  },
+  "social": {
+    "twitter": "https://twitter.com/gencho416",
+    "facebook": "https://www.facebook.com/gencho416"
+  },
+  "pages": {
+    "top": "/",
+    "about": "https://www.gencho.biz/%E4%BC%9A%E7%A4%BE%E6%A6%82%E8%A6%81",
+    "services": "https://www.gencho.biz/services-4",
+    "contact": "https://www.gencho.biz/%E8%A4%87%E8%A3%BD-%E4%BA%8B%E6%A5%AD%E5%86%85%E5%AE%B9",
+    "recruit": "https://en-gage.net/gencho/"
+  },
+  "mapping": {
+    "客室": "施工実績",
+    "温泉": "保守・メンテナンス",
+    "料理": "取扱製品・資材",
+    "館内": "会社情報",
+    "アクセス": "アクセス",
+    "ウェディング": "採用情報",
+    "よくある質問": "よくある質問"
+  }
+}

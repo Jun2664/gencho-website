@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gencho Website - WordPress連携機能搭載</title>
+    <meta name="description" content="Next.js + WordPress連携による自動デプロイシステム搭載">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        .logo {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .feature {
+            background: #f8f9ff;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+        }
+        .feature h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .feature p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .status {
+            background: #e8f5e8;
+            color: #2d5016;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 1rem 0;
+            font-weight: 600;
+        }
+        .monju-info {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+        .monju-info h3 {
+            margin-bottom: 0.5rem;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 0.5rem;
+            transition: transform 0.2s;
+            font-weight: 600;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        .tech-stack {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        .tech-item {
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        @media (max-width: 768px) {
+            .container { padding: 1rem; }
+            .content { padding: 2rem; }
+            .logo { font-size: 2rem; }
+            .features { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="logo">🚀 Gencho Website</h1>
+            <p class="subtitle">WordPress連携による自動デプロイシステム搭載</p>
+
+            <div class="status">
+                ✅ 自動デプロイシステム稼働中
+            </div>
+
+            <div class="tech-stack">
+                <span class="tech-item">Next.js 14</span>
+                <span class="tech-item">TypeScript</span>
+                <span class="tech-item">Tailwind CSS</span>
+                <span class="tech-item">WordPress連携</span>
+                <span class="tech-item">GitHub Actions</span>
+                <span class="tech-item">ConohaWing</span>
+            </div>
+
+            <div class="features">
+                <div class="feature">
+                    <h3>🔄 WordPress連携</h3>
+                    <p>記事の投稿・更新時に自動でサイトが更新されます</p>
+                </div>
+                <div class="feature">
+                    <h3>⚡ 高速デプロイ</h3>
+                    <p>GitHub Actionsによる自動ビルド・デプロイ（通常5-15分）</p>
+                </div>
+                <div class="feature">
+                    <h3>🛡️ 静的サイト</h3>
+                    <p>SSG（静的サイト生成）による高速・安全な配信</p>
+                </div>
+                <div class="feature">
+                    <h3>🔧 手動実行</h3>
+                    <p>WordPress管理画面からの手動デプロイも可能</p>
+                </div>
+            </div>
+
+            <div class="monju-info">
+                <h3>🏯 monjusou.com クローン機能搭載</h3>
+                <p>完全再現システムが実装され、切り替え可能な状態で待機中です</p>
+            </div>
+
+            <div>
+                <a href="https://github.com/Jun2664/gencho-website" class="btn" target="_blank">📚 GitHub Repository</a>
+                <a href="https://github.com/Jun2664/gencho-website/actions" class="btn" target="_blank">⚙️ Deploy Status</a>
+            </div>
+
+            <p style="margin-top: 2rem; color: #999; font-size: 0.9rem;">
+                Last updated: <script>document.write(new Date().toLocaleString('ja-JP'))</script>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        console.log('🚀 Gencho Website - WordPress Integration System');
+        console.log('✅ Auto-deploy system active');
+        console.log('🏯 Monjusou clone system ready');
+
+        // 簡単な動作確認
+        document.addEventListener('DOMContentLoaded', function() {
+            const status = document.querySelector('.status');
+            status.style.animation = 'pulse 2s infinite';
+
+            // CSS アニメーション追加
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes pulse {
+                    0% { transform: scale(1); }
+                    50% { transform: scale(1.05); }
+                    100% { transform: scale(1); }
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
