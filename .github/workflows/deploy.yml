@@ -43,9 +43,12 @@ jobs:
     - name: 📁 publicディレクトリの内容をoutにコピー
       run: |
         echo "📁 public/の内容をout/にコピーしています..."
-        # index.html以外のファイルとディレクトリをコピー
-        find public -mindepth 1 -maxdepth 1 ! -name 'index.html' -exec cp -r {} out/ \;
+        # index.html以外のファイルとディレクトリを強制的に上書きコピー
+        rsync -av --exclude='index.html' public/ out/
         echo "✅ コピー完了"
+        echo ""
+        echo "📊 コピー後のout/ディレクトリ:"
+        ls -lh out/img/*.png | head -5
 
     - name: 📊 ビルド結果を確認
       run: |
