@@ -254,3 +254,69 @@ gencho-website/
 - FTP認証情報はGitHub Secretsでのみ管理
 - GitHubトークンは最小限の権限（repoスコープのみ）に設定
 - 認証情報の定期的なローテーションを推奨
+## Git操作とファイル管理のベストプラクティス（2025-10-07追加）
+
+### Windows Zone.Identifierファイル対策
+**問題**: Windowsでダウンロードしたファイルに自動付与される`:Zone.Identifier`ファイルがGitで深刻な問題を引き起こす
+- コロン（`:`）を含むファイル名はGitで「invalid path」エラーになる
+- 一度コミットすると、リポジトリの破損やチェックアウト失敗の原因になる
+
+**対策**:
+1. `.gitignore`に以下を追加済み：
+```
+*:Zone.Identifier
+*.backup.*
+```
+
+2. コミット前に必ず確認：
+```bash
+git status
+find . -name "*:Zone.Identifier" -o -name "*.backup.*"
+```
+
+3. 既にコミットされている場合は削除：
+```bash
+git filter-branch --tree-filter 'find . -name "*:Zone.Identifier" -delete' HEAD
+```
+
+### 安全なGit操作手順
+**コミット前の必須チェック**:
+1. `git status` で変更ファイル一覧を確認
+2. `git diff` で変更内容を確認
+3. 不要なファイル（Zone.Identifier、backup、一時ファイル）がないか確認
+4. `git add` は個別ファイル指定を推奨（`git add -A`は慎重に）
+
+**デプロイ前の必須確認**:
+- `src/app/` ディレクトリが存在するか（Next.jsビルドに必須）
+- `tailwind.config.js`, `tsconfig.json` が存在するか
+- ビルドに必要な全ファイルがコミットされているか
+
+### WSL環境での注意点
+- WSLパス（`//wsl$/Ubuntu/home/jun/...`）は通常のLinuxパスと異なる動作をする
+- `cd`コマンドの動作が不安定な場合がある
+- ファイル操作は絶対パスを使用することを推奨
+
+### Gitリポジトリ修復手順
+リポジトリが深刻に破損した場合の対処法：
+```bash
+# 1. .gitディレクトリを削除
+rm -rf .git
+
+# 2. Git再初期化
+git init
+git config user.name "Jun2664"
+git config user.email "junnosuke.pafu@gmail.com"
+
+# 3. リモート追加
+git remote add origin https://github.com/Jun2664/gencho-website.git
+
+# 4. 現在の状態をコミット
+git add -A
+git commit -m "リポジトリ再構築"
+
+# 5. 強制プッシュ
+git branch -M main
+git push -f origin main
+```
+
+**重要**: 強制プッシュは慎重に。チーム開発の場合は事前に通知すること。

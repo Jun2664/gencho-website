@@ -35,3 +35,8 @@ next-env.d.ts
 
 # wordpress
 /wordpress-custom-backup/
+# Windows Zone.Identifier files (2025-10-07追加)
+*:Zone.Identifier
+
+# Backup files
+*.backup.*
