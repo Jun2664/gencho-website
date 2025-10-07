@@ -40,6 +40,13 @@ jobs:
       env:
         NODE_ENV: production
 
+    - name: 📁 publicディレクトリの内容をoutにコピー
+      run: |
+        echo "📁 public/の内容をout/にコピーしています..."
+        # index.html以外のファイルとディレクトリをコピー
+        find public -mindepth 1 -maxdepth 1 ! -name 'index.html' -exec cp -r {} out/ \;
+        echo "✅ コピー完了"
+
     - name: 📊 ビルド結果を確認
       run: |
         echo "📁 生成されたファイル:"
