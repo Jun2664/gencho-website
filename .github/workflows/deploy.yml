@@ -57,6 +57,14 @@ jobs:
         echo "📊 コピー後のout/ディレクトリ:"
         ls -lh out/img/*.png | head -5
 
+    - name: 🔄 public/_monju/index.htmlを強制的にout/にコピー
+      run: |
+        echo "🔄 public/_monju/index.htmlをout/index.htmlに上書きコピー..."
+        cp -f public/_monju/index.html out/index.html
+        echo "✅ index.html上書き完了"
+        echo "📊 CSS参照確認:"
+        grep -o "slick_style0[0-9].css" out/index.html || echo "CSS参照が見つかりません"
+
     - name: 📊 ビルド結果を確認
       run: |
         echo "📁 生成されたファイル:"
