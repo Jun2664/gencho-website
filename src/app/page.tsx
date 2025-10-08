@@ -7,7 +7,10 @@ export const revalidate = false;
 function loadHtml() {
   const p = path.join(process.cwd(), "public/_monju/index.html");
   try {
-    return fs.readFileSync(p, "utf-8");
+    // キャッシュを無効化して最新のファイルを読み込む
+    const content = fs.readFileSync(p, "utf-8");
+    console.log("[Build] Loaded index.html, first 200 chars:", content.substring(0, 200));
+    return content;
   } catch {
     return `<!doctype html>
 <html>
