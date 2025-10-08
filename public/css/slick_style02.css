@@ -14,11 +14,19 @@
   justify-content: center;
 }
 
+.slider_logo_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ヒーローセクションのロゴスタイル */
 .slider_logo img {
   width: 150px !important;
   height: auto !important;
-  margin-bottom: 10px !important;
+  margin: 0 auto 10px auto !important;
+  display: block !important;
 }
 
 /* 現長株式会社の社名スタイル */
@@ -31,6 +39,8 @@
   white-space: nowrap !important;
   text-align: center !important;
   line-height: 1 !important;
+  margin: 0 auto !important;
+  display: block !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -45,7 +55,7 @@
 /* モバイル用の調整 */
 .slider_logo img {
   width: 100px !important;
-  margin-bottom: 8px !important;
+  margin: 0 auto 8px auto !important;
 }
 
 .company-name {
