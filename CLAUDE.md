@@ -355,3 +355,75 @@ git push -f origin main
 - 画像やアセットファイルを更新する際は、ファイル名にバージョン番号や日付を含める
 - 例: `logo_v2.png`, `hero_20251008.jpg` など
 - これにより上書き問題を完全に回避できる
+
+### WSL環境でのビルド問題とディレクトリ構造（2025-10-08追加）
+
+#### WSL UNCパスの制限
+**問題**: `\wsl$\Ubuntu\home\jun\...` のようなUNCパスでは、一部のNode.jsコマンドが実行できない
+
+**症状**:
+```bash
+npm run build
+# エラー: UNC パスはサポートされません
+# CMD.EXE が開始できない
+```
+
+**原因**:
+- Windows側からWSLファイルシステムにアクセスする特殊なパス
+- Node.js/npmがCMD.EXEを起動する際、UNCパスがサポートされない
+- WSL内部の通常のLinuxパス（`/home/jun/...`）では問題なし
+
+**対処法**:
+1. **GitHub Actionsでビルド**（推奨）:
+   - 本番デプロイはGitHub Actions（ubuntu-latest）で実行
+   - WSL環境の問題を完全に回避できる
+   - コミット&プッシュするだけで自動ビルド・デプロイ
+
+2. **WSL内部でビルド**:
+   - WSLターミナルを直接開く（Windows Terminalなど）
+   - `/home/jun/gencho-website`に移動してビルド
+   - UNCパス経由ではアクセスしない
+
+3. **ローカル確認は開発サーバーを使用**:
+   ```bash
+   # ポート8888、キャッシュ無効化で起動
+   npx http-server out -p 8888 -c-1
+   ```
+
+#### ディレクトリ構造の重要な注意点
+
+**critical**: `public/` と `out/` の関係を理解する
+```
+public/_monju/index.html    # ソースファイル（編集対象）
+    ↓ npm run build
+out/index.html              # ビルド生成ファイル（デプロイ対象）
+```
+
+**よくある間違い**:
+- ❌ `public/_monju/index.html`を更新したが`out/index.html`が古いままデプロイされる
+- ❌ `out/`ディレクトリを手動編集（次回ビルドで上書きされる）
+- ❌ WSL環境で`npm run build`を実行しようとする（UNCパスエラー）
+
+**正しい手順**:
+1. `public/_monju/index.html`を編集
+2. Gitにコミット&プッシュ
+3. GitHub Actionsが自動的に：
+   - `npm run build`を実行
+   - `public/`の内容を`out/`にコピー（rsync使用）
+   - `out/`を本番サーバーにFTPアップロード
+
+#### Zone.Identifierファイルの完全削除
+
+**問題**: `.gitignore`に追加しても、既存のZone.Identifierファイルは残る
+
+**確認方法**:
+```bash
+find . -name "*:Zone.Identifier"
+```
+
+**削除方法**:
+```bash
+find . -name "*:Zone.Identifier" -delete
+```
+
+**予防**: 画像ファイルをダウンロードしたら、すぐにZone.Identifierを削除してからGit操作を行う
