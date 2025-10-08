@@ -427,3 +427,83 @@ find . -name "*:Zone.Identifier" -delete
 ```
 
 **予防**: 画像ファイルをダウンロードしたら、すぐにZone.Identifierを削除してからGit操作を行う
+
+## デプロイ検証の自動化（2025-10-08追加）
+
+### Claude Codeによる自動デプロイ検証
+
+Claude Codeは以下の作業を自動的に実行できます：
+
+#### 1. GitHub Actionsのログ確認
+```bash
+# 最新のワークフロー実行状態を確認
+curl -s "https://api.github.com/repos/Jun2664/gencho-website/actions/runs?per_page=1" \
+  | grep -E '"status"|"conclusion"|"html_url"'
+
+# ワークフローログから特定の出力を確認（デバッグ出力など）
+# GitHub APIでログを取得して検証
+```
+
+#### 2. 本番環境のHTML検証
+```bash
+# 本番環境から特定のHTML要素を取得して検証
+curl -s "https://gencho.site/" | grep -A 5 "slider_logo_container"
+
+# 特定のスタイル属性が含まれているか確認
+curl -s "https://gencho.site/" | grep 'style="width: 120px'
+
+# ロゴファイルの存在確認
+curl -I "https://gencho.site/img/logo_wht08_new.png"
+```
+
+#### 3. デプロイ完了の検証フロー
+
+**自動実行できる検証手順**:
+1. `git push`後、30秒待機（ワークフロー開始待ち）
+2. GitHub Actions APIでビルド状態を確認（in_progress/completed）
+3. ビルドログから特定の出力を検索（エラーや警告）
+4. デプロイ完了後、本番環境のHTMLを取得
+5. 期待される変更内容が含まれているか検証
+6. 検証結果をユーザーに報告
+
+**例: ヒーローセクションのスタイル変更検証**
+```bash
+# 1. デプロイ完了まで待機（最大5分）
+# 2. 本番環境のHTMLを取得
+HTML=$(curl -s "https://gencho.site/")
+
+# 3. スタイル属性を検証
+if echo "$HTML" | grep -q 'style="width: 120px'; then
+  echo "✅ ロゴサイズ変更が反映されています"
+else
+  echo "❌ ロゴサイズ変更が反映されていません"
+fi
+
+if echo "$HTML" | grep -q 'font-size: 48px'; then
+  echo "✅ 社名フォントサイズが反映されています"
+else
+  echo "❌ 社名フォントサイズが反映されていません"
+fi
+```
+
+#### 4. Claude Codeへの依頼方法
+
+**デプロイ後の自動検証を依頼する場合**:
+```
+「デプロイが完了したら、本番環境でヒーローセクションの
+ロゴサイズと社名のスタイルが正しく反映されているか確認してください」
+```
+
+Claude Codeは以下を自動実行します:
+- GitHub Actionsの完了待ち（タイムアウト: 10分）
+- 本番環境HTMLの取得と検証
+- 検証結果の報告
+- 問題がある場合は原因の診断と対処法の提案
+
+#### 5. 制限事項
+
+- GitHub APIの認証が必要な場合は、公開情報のみ取得可能
+- デプロイ完了まで数分かかるため、リアルタイム確認には待機が必要
+- FTPサーバーへの直接アクセスは不可（本番環境のHTTP経由のみ）
+
+**推奨**: デプロイ後3-5分待ってから検証を依頼すると、確実に最新状態を確認できます。
