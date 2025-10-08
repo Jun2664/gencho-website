@@ -1,31 +1,56 @@
 
 .slick_container { width: 100%; height: 100%;}
 .slider img { width: 100%; height: 100vh; object-fit: cover;}
-.slider_logo{ position:absolute; top: 40%; left: 40%; margin: auto; width:300px; height:50px;}
+.slider_logo{ 
+  position:absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 /* ヒーローセクションのロゴスタイル */
 .slider_logo img {
-  width: 120px !important;
+  width: 150px !important;
   height: auto !important;
+  margin-bottom: 10px !important;
 }
 
 /* 現長株式会社の社名スタイル */
 .company-name {
   color: white !important;
-  font-size: 48px !important;
-  font-family: 'Noto Serif JP', 'Yu Mincho', 'YuMincho', '游明朝', serif !important;
-  font-weight: 500 !important;
-  margin-top: 20px !important;
-  letter-spacing: 0.1em !important;
+  font-size: 64px !important;
+  font-family: 'Yuji Syuku', '衡山毛筆フォント', 'Noto Serif JP', 'Yu Mincho', 'YuMincho', '游明朝', serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.15em !important;
+  white-space: nowrap !important;
+  text-align: center !important;
+  line-height: 1 !important;
 }
 
 @media only screen and (max-width: 768px) {
 .slider img { width: 100%; height: 86vh; object-fit: cover;}
-.slider_logo{ position:absolute; top: 30%; left: 12%; margin: auto; width:300px; height:50px;}
+.slider_logo{ 
+  position:absolute; 
+  top: 40%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-/* モバイル用の社名サイズ調整 */
+/* モバイル用の調整 */
+.slider_logo img {
+  width: 100px !important;
+  margin-bottom: 8px !important;
+}
+
 .company-name {
-  font-size: 32px !important;
+  font-size: 36px !important;
+  letter-spacing: 0.1em !important;
 }
 }
 
