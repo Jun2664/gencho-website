@@ -74,11 +74,13 @@ jobs:
         echo "📁 生成されたファイル:"
         ls -la out/
         echo ""
+        echo "📄 index.htmlの詳細確認:"
+        ls -lh out/index.html || echo "⚠️ index.htmlが見つかりません！"
+        echo "📄 index.htmlの行数:"
+        wc -l out/index.html || echo "⚠️ index.htmlが読めません！"
+        echo ""
         echo "📄 ブログページ確認:"
         ls -la out/blog/ 2>/dev/null || echo "ブログフォルダはまだ作成されていません"
-        echo ""
-        echo "🔍 ヒーローセクションのHTML確認:"
-        grep -A 3 "slider_logo_container" out/index.html || echo "slider_logo_containerが見つかりません"
 
     - name: 🚀 本番サーバーへデプロイ
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
