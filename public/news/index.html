@@ -218,8 +218,30 @@
 
 <!-- Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="/js/plugins.js"></script>
-<script src="/js/scripts.js"></script>
+<script src="/js/slick.min.js"></script>
+<script src="/js/slick.script.js"></script>
+<script src="/js/timber.master.min01.js"></script>
+<script src="/js/tophe.js"></script>
+<script src="/js/jquery.mb.YTPlayer.min.js"></script>
+
+<script>
+$(function(){
+    var duration = 2000;
+    var aside = $('.page_main > aside');
+    var asidButton = aside.find('button')
+        .on('click', function(){
+            aside.toggleClass('open');
+            if(aside.hasClass('open')){
+                aside.stop(true).animate({left: '-70px'}, duration, 'easeOutExpo');
+                asidButton.find('img').attr('src', '/img/btn03_close.png');
+            }else{
+                aside.stop(true).animate({left: '-240px'}, duration, 'easeOutExpo');
+                asidButton.find('img').attr('src', '/img/btn03_open.png');
+            };
+        });
+
+});
+</script>
 
 </body>
 </html>
