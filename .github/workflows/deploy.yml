@@ -59,11 +59,15 @@ jobs:
 
     - name: 🔄 public/_monju/index.htmlを強制的にout/にコピー
       run: |
+        echo "🔄 out/index.htmlを削除..."
+        rm -f out/index.html
         echo "🔄 public/_monju/index.htmlをout/index.htmlに上書きコピー..."
         cp -f public/_monju/index.html out/index.html
         echo "✅ index.html上書き完了"
-        echo "📊 CSS参照確認:"
-        grep -o "slick_style0[0-9].css" out/index.html || echo "CSS参照が見つかりません"
+        echo "📊 タイムスタンプ確認:"
+        grep "Last updated" out/index.html
+        echo "📊 メニューリンク確認:"
+        grep 'href="/about/"' out/index.html | head -1
 
     - name: 📊 ビルド結果を確認
       run: |
