@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: '現長について',
@@ -8,121 +8,133 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="bg-gray-50">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">現長について</h1>
-          <p className="text-xl text-blue-100">トップレベルの技術と顧客満足が私たちの誇りです</p>
-        </div>
-      </section>
+    <>
+      {/* Monjusou style CSS */}
+      <link rel="stylesheet" href="/css/core.min.css" />
+      <link rel="stylesheet" href="/css/style.css" />
 
-      {/* Introduction */}
-      <section className="py-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900 border-b-4 border-blue-600 pb-3">代表挨拶</h2>
-            <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
-              <p>
-                現長株式会社のウェブサイトをご覧いただき、誠にありがとうございます。
-              </p>
-              <p>
-                当社は、高速シートシャッター施工を中心に、建築・施工、リフォームなど、
-                幅広いサービスを提供している会社です。
-              </p>
-              <p>
-                「トップレベルの技術と顧客満足」を経営理念に掲げ、お客様に
-                最高品質の施工とサービスを提供することを使命としております。
-              </p>
-              <p>
-                お客様には、工場、倉庫、物流施設、商業施設など、実に多様な
-                業種の方々がおられ、私たちは多くの経験を積んでまいりました。
-                この豊富な経験とノウハウを活かし、あらゆるシートシャッターの
-                施工・工事に対応できることが当社の強みです。
-              </p>
-              <p>
-                何かご質問やご要望がございましたら、お気軽にお問い合わせください。
-                皆様からのご連絡を心よりお待ちしております。
-              </p>
-              <p className="text-right mt-8">
-                <span className="text-lg font-semibold">現長株式会社</span>
+      <div>
+        {/* Hero Section with vertical text */}
+        <section className="section-block bkg-info02 pt-120a mb-40">
+          <div className="row">
+            <div className="column width-12 center_sp horizon" data-animate-in="preset:slideInRightShort;duration:3000ms;">
+              <h2 className="ls02 f16a lh18">現長について<br />
+                <span className="allura f16 f_grn ls01 mb-10">About Gencho</span>
+              </h2>
+              <p className="p1">
+                確かな技術と上質な施工<br className="pc" />
+                シートシャッター専門の建設会社
               </p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Company Strengths */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">現長株式会社の強み</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            <div className="text-center p-6 bg-blue-50 rounded-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+        {/* President Message */}
+        <section className="section-block feature-2 right no-padding-bottom">
+          <div className="row flex">
+            <div className="column width-8">
+              <div className="feature-image mb-mobile-50">
+                <div className="feature-image-inner horizon" data-animate-in="preset:slideInLeftShort;duration:3000;" data-threshold="0.3">
+                  <div className="pc"><img src="/img/top01.jpg" alt="代表挨拶" /></div>
+                  <div className="sp"><img src="/img/top01_sp.jpg" alt="代表挨拶" /></div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-900">トップレベルの技術力</h3>
-              <p className="text-gray-600">長年の経験と高度な技術力で、高品質な施工を実現します。</p>
             </div>
+            <div className="column width-3 offset-1 tategaki02">
+              <div className="feature-content">
+                <div className="feature-content-inner left center_sp horizon" data-animate-in="preset:slideInRightShort;duration:3000;delay:300ms;" data-threshold="0.3">
+                  <h2 className="lspacing-medium f16 ml-20 lh15">代表挨拶<span className="pc">　　　</span><br className="sp" /><span className="allura f_grn shin ls01 ml-20">Message</span></h2>
+                  <p className="p1 ml-20">
+                    現長株式会社のウェブサイトをご覧いただき、誠にありがとうございます。<br /><br />
 
-            <div className="text-center p-6 bg-blue-50 rounded-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-900">顧客満足の追求</h3>
-              <p className="text-gray-600">お客様のニーズに寄り添い、最高のサービスを提供します。</p>
-            </div>
+                    当社は、高速シートシャッター施工を中心に、建築・施工、リフォームなど、幅広いサービスを提供している会社です。<br /><br />
 
-            <div className="text-center p-6 bg-blue-50 rounded-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-900">幅広い業種への対応</h3>
-              <p className="text-gray-600">工場、倉庫、物流施設、商業施設など、多様な業種に対応。</p>
-            </div>
+                    「トップレベルの技術と顧客満足」を経営理念に掲げ、お客様に最高品質の施工とサービスを提供することを使命としております。<br /><br />
 
-            <div className="text-center p-6 bg-blue-50 rounded-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                </svg>
+                    お客様には、工場、倉庫、物流施設、商業施設など、実に多様な業種の方々がおられ、私たちは多くの経験を積んでまいりました。この豊富な経験とノウハウを活かし、あらゆるシートシャッターの施工・工事に対応できることが当社の強みです。<br /><br />
+
+                    何かご質問やご要望がございましたら、お気軽にお問い合わせください。皆様からのご連絡を心よりお待ちしております。
+                  </p>
+                  <div className="p1 ml-20" style={{textAlign: 'right', marginTop: '30px'}}>
+                    <strong>現長株式会社</strong>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-900">豊富な施工実績</h3>
-              <p className="text-gray-600">数多くの施工実績から培った確かなノウハウがあります。</p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">お気軽にご相談ください</h2>
-          <p className="text-xl mb-8 text-blue-100">
-            高速シートシャッター施工、建築・施工、リフォームのことなら、現長株式会社にお任せください。
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact"
-              className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300 shadow-lg"
-            >
-              お問い合わせ
-            </a>
-            <a
-              href="tel:06-6599-9556"
-              className="bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-900 transition-colors duration-300 border-2 border-white shadow-lg"
-            >
-              電話: 06-6599-9556
-            </a>
+        {/* Company Strengths */}
+        <section className="section-block feature-2 no-padding-bottom">
+          <div className="row flex">
+            <div className="column width-8 push-3 offset-1">
+              <div className="feature-image mb-mobile-50">
+                <div className="feature-image-inner center-on-mobile horizon" data-animate-in="preset:slideInRightShort;duration:3000;delay:300ms;" data-threshold="0.3">
+                  <div className="img-wrap1">
+                    <div className="pc"><img src="/img/top02.jpg" alt="技術力" /></div>
+                    <div className="sp"><img src="/img/top02_sp.jpg" alt="技術力" /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="column width-3 pull-9 tategaki02">
+              <div className="feature-content">
+                <div className="feature-content-inner left center_sp horizon" data-animate-in="preset:slideInLeftShort;duration:3000;" data-threshold="0.3">
+                  <h2 className="lspacing-medium f16 ml-20 lh15">現長の強み<span className="pc">　　　</span><br className="sp" /><span className="allura f_grn shin ls01 ml-20">Strengths</span></h2>
+                  <p className="p1 ml-20">
+                    <strong className="f_grn">トップレベルの技術力</strong><br />
+                    長年の経験と高度な技術力で、高品質な施工を実現します。<br /><br />
+
+                    <strong className="f_grn">顧客満足の追求</strong><br />
+                    お客様のニーズに寄り添い、最高のサービスを提供します。<br /><br />
+
+                    <strong className="f_grn">幅広い業種への対応</strong><br />
+                    工場、倉庫、物流施設、商業施設など、多様な業種に対応。<br /><br />
+
+                    <strong className="f_grn">豊富な施工実績</strong><br />
+                    数多くの施工実績から培った確かなノウハウがあります。
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+
+        {/* Philosophy */}
+        <section className="section-block feature-2 right">
+          <div className="row flex">
+            <div className="column width-8">
+              <div className="feature-image mb-mobile-50">
+                <div className="feature-image-inner center-on-mobile horizon" data-animate-in="preset:slideInLeftShort;duration:3000;" data-threshold="0.3">
+                  <div className="pc"><img src="/img/top03.jpg" alt="経営理念" /></div>
+                  <div className="sp"><img src="/img/top03_sp.jpg" alt="経営理念" /></div>
+                </div>
+              </div>
+            </div>
+            <div className="column width-3 offset-1 tategaki02">
+              <div className="feature-content">
+                <div className="feature-content-inner left center_sp horizon" data-animate-in="preset:slideInRightShort;duration:3000;delay:300ms;" data-threshold="0.3">
+                  <h2 className="lspacing-medium f16 ml-20 lh15">経営理念<span className="pc">　　　</span><br className="sp" /><span className="allura f_grn shin ls01 ml-20">Philosophy</span></h2>
+                  <p className="p1 ml-20">
+                    トップレベルの技術と顧客満足<br /><br />
+
+                    私たちは、お客様に最高品質の施工とサービスを提供することを使命としています。<br /><br />
+
+                    常に技術革新を追求し、お客様の期待を超える価値を創造してまいります。<br /><br />
+
+                    信頼と実績を積み重ね、建設業界のリーディングカンパニーを目指します。
+                  </p>
+                  <a href="/contact/" className="button large bkg-btn01 bkg-hover-btn01">>　お問い合わせ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Animation Script */}
+        <Script src="/js/plugins.js" strategy="lazyOnload" />
+        <Script src="/js/scripts.js" strategy="lazyOnload" />
+      </div>
+    </>
   )
 }
