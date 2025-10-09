@@ -124,7 +124,7 @@ export default function AboutPage() {
 
                     信頼と実績を積み重ね、建設業界のリーディングカンパニーを目指します。
                   </p>
-                  <a href="/contact/" className="button large bkg-btn01 bkg-hover-btn01">>　お問い合わせ</a>
+                  <a href="/contact/" className="button large bkg-btn01 bkg-hover-btn01">{'>'}　お問い合わせ</a>
                 </div>
               </div>
             </div>
