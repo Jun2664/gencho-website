@@ -1,0 +1,575 @@
+* Request at 2025-10-08 19:54:27.8206282 +0900 JST m=+0.117881701
+* Request to https://api.github.com/repos/Jun2664/gencho-website/actions/runs/18340618354?exclude_pull_requests=true
+* Request took 508.584ms
+* Request at 2025-10-08 19:54:28.331262 +0900 JST m=+0.628480901
+* Request to https://api.github.com/repos/Jun2664/gencho-website/actions/workflows/193476791
+* Request took 234.8174ms
+* Request at 2025-10-08 19:54:28.5685476 +0900 JST m=+0.865750501
+* Request to https://api.github.com/repos/Jun2664/gencho-website/actions/runs/18340618354/jobs?per_page=100
+* Request took 299.545ms
+build-and-deploy	UNKNOWN STEP	﻿2025-10-08T09:45:14.8454493Z Current runner version: '2.328.0'
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8478368Z ##[group]Runner Image Provisioner
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8479321Z Hosted Compute Agent
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8479926Z Version: 20250912.392
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8480574Z Commit: d921fda672a98b64f4f82364647e2f10b2267d0b
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8481317Z Build Date: 2025-09-12T15:23:14Z
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8481982Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8482595Z ##[group]Operating System
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8483153Z Ubuntu
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8483664Z 24.04.3
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8484213Z LTS
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8484712Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8485257Z ##[group]Runner Image
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8485915Z Image: ubuntu-24.04
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8486480Z Version: 20250929.60.1
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8487544Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250929.60/images/ubuntu/Ubuntu2404-Readme.md
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8489411Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250929.60
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8490524Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8491660Z ##[group]GITHUB_TOKEN Permissions
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8493905Z Contents: read
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8494602Z Metadata: read
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8495160Z Packages: read
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8495657Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8497785Z Secret source: Actions
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8498775Z Prepare workflow directory
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8888387Z Prepare all required actions
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:14.8926209Z Getting action download info
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:15.3006550Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:15.4776357Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:15.6107989Z Download action repository 'SamKirkland/FTP-Deploy-Action@v4.3.4' (SHA:8a24039354ee91000cb948cb4a1dbdf1a1b94a3c)
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.2930074Z Complete job name: build-and-deploy
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.3662745Z ##[group]Run actions/checkout@v4
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.3663699Z with:
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.3664247Z   repository: Jun2664/gencho-website
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.3665011Z   token: ***
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.3665463Z   ssh-strict: true
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.3665936Z   ssh-user: git
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.3666415Z   persist-credentials: true
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.3666936Z   clean: true
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.3667407Z   sparse-checkout-cone-mode: true
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.3667975Z   fetch-depth: 1
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.3668612Z   fetch-tags: false
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.3669094Z   show-progress: true
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.3669577Z   lfs: false
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.3670030Z   submodules: false
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.3670516Z   set-safe-directory: true
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.3671312Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.4740434Z Syncing repository: Jun2664/gencho-website
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.4742273Z ##[group]Getting Git version info
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.4743284Z Working directory is '/home/runner/work/gencho-website/gencho-website'
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.4744411Z [command]/usr/bin/git version
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.4812438Z git version 2.51.0
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.4838829Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.4853219Z Temporarily overriding HOME='/home/runner/work/_temp/0b55192c-4200-4ed7-83a7-1df226f5bc8c' before making global git config changes
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.4855495Z Adding repository directory to the temporary git global config as a safe directory
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.4865387Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gencho-website/gencho-website
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.4901709Z Deleting the contents of '/home/runner/work/gencho-website/gencho-website'
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.4905107Z ##[group]Initializing the repository
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.4909204Z [command]/usr/bin/git init /home/runner/work/gencho-website/gencho-website
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5017777Z hint: Using 'master' as the name for the initial branch. This default branch name
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5020182Z hint: is subject to change. To configure the initial branch name to use in all
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5022491Z hint: of your new repositories, which will suppress this warning, call:
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5024530Z hint:
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5025769Z hint: 	git config --global init.defaultBranch <name>
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5027363Z hint:
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5028753Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5030725Z hint: 'development'. The just-created branch can be renamed via this command:
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5032192Z hint:
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5033173Z hint: 	git branch -m <name>
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5034092Z hint:
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5035386Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5037651Z Initialized empty Git repository in /home/runner/work/gencho-website/gencho-website/.git/
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5041051Z [command]/usr/bin/git remote add origin https://github.com/Jun2664/gencho-website
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5076797Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5077624Z ##[group]Disabling automatic garbage collection
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5081058Z [command]/usr/bin/git config --local gc.auto 0
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5110551Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5111997Z ##[group]Setting up auth
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5118359Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5150452Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5477405Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5508240Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5729499Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5764353Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5765869Z ##[group]Fetching the repository
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:16.5783133Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +40e10c9e11662c2a65f2f8ba0c97d760f4980416:refs/remotes/origin/main
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2199349Z From https://github.com/Jun2664/gencho-website
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2201716Z  * [new ref]         40e10c9e11662c2a65f2f8ba0c97d760f4980416 -> origin/main
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2229726Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2231289Z ##[group]Determining the checkout info
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2232784Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2236583Z [command]/usr/bin/git sparse-checkout disable
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2275445Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2302358Z ##[group]Checking out the ref
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2305444Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2573355Z Switched to a new branch 'main'
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2575162Z branch 'main' set up to track 'origin/main'.
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2583787Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2619640Z [command]/usr/bin/git log -1 --format=%H
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2641060Z 40e10c9e11662c2a65f2f8ba0c97d760f4980416
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2945904Z ##[group]Run actions/setup-node@v4
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2947127Z with:
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2947971Z   node-version: 20
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2949089Z   cache: npm
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2950435Z   always-auth: false
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2951803Z   check-latest: false
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2953727Z   token: ***
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.2955072Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.4907663Z Found in cache @ /opt/hostedtoolcache/node/20.19.5/x64
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:17.4913717Z ##[group]Environment details
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:19.9464559Z node: v20.19.5
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:19.9465116Z npm: 10.8.2
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:19.9465483Z yarn: 1.22.22
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:19.9468474Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:19.9492203Z [command]/opt/hostedtoolcache/node/20.19.5/x64/bin/npm config get cache
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:20.2667798Z /home/runner/.npm
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:20.5365903Z Cache hit for: node-cache-Linux-x64-npm-cf519dab10a5fcd0df7da9ef77a534e0d4becc020815a167f4adf4a66672deaf
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:21.7529797Z Received 33554432 of 125031125 (26.8%), 32.0 MBs/sec
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:22.4193670Z Received 125031125 of 125031125 (100.0%), 71.4 MBs/sec
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:22.4195105Z Cache Size: ~119 MB (125031125 B)
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:22.4307364Z [command]/usr/bin/tar -xf /home/runner/work/_temp/bd88e51c-141f-449b-a662-77a41c95853e/cache.tzst -P -C /home/runner/work/gencho-website/gencho-website --use-compress-program unzstd
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:22.6180504Z Cache restored successfully
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:22.6495629Z Cache restored from key: node-cache-Linux-x64-npm-cf519dab10a5fcd0df7da9ef77a534e0d4becc020815a167f4adf4a66672deaf
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:22.6641137Z ##[group]Run npm ci
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:22.6641483Z [36;1mnpm ci[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:22.6760329Z shell: /usr/bin/bash -e {0}
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:22.6760638Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5278707Z 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5287065Z added 208 packages, and audited 209 packages in 9s
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5287519Z 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5287809Z 59 packages are looking for funding
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5288543Z   run `npm fund` for details
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5312684Z 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5313204Z 1 high severity vulnerability
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5314347Z 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5314754Z To address all issues (including breaking changes), run:
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5315307Z   npm audit fix --force
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5315548Z 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5315738Z Run `npm audit` for details.
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5848903Z ##[group]Run echo "🧹 Next.jsキャッシュをクリアしています..."
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5849341Z [36;1mecho "🧹 Next.jsキャッシュをクリアしています..."[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5849637Z [36;1mrm -rf .next[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5849858Z [36;1mrm -rf out[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5850063Z [36;1mecho "✅ キャッシュクリア完了"[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5882443Z shell: /usr/bin/bash -e {0}
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5882728Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5937283Z 🧹 Next.jsキャッシュをクリアしています...
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5958915Z ✅ キャッシュクリア完了
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5991522Z ##[group]Run npm run build
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.5991825Z [36;1mnpm run build[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.6022127Z shell: /usr/bin/bash -e {0}
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.6022379Z env:
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.6022565Z   NODE_ENV: production
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.6022778Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.7180778Z 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.7181160Z > gencho-website@1.0.0 build
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.7181485Z > next build
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:31.7181610Z 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:32.3067467Z ⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:32.3154294Z Attention: Next.js now collects completely anonymous telemetry regarding usage.
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:32.3155470Z This information is used to shape Next.js' roadmap and prioritize features.
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:32.3156979Z You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:32.3158485Z https://nextjs.org/telemetry
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:32.3158784Z 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:32.3729506Z   ▲ Next.js 14.2.33
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:32.3730337Z 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:32.4571826Z    Creating an optimized production build ...
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:39.2632241Z  ✓ Compiled successfully
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:39.2640392Z    Linting and checking validity of types ...
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:41.0277372Z    Collecting page data ...
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:41.7467756Z    Generating static pages (0/4) ...
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:41.9668746Z    Generating static pages (1/4) 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:41.9670098Z    Generating static pages (2/4) 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:42.0783829Z    Generating static pages (3/4) 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:42.1013762Z [Build] Loaded index.html, first 200 chars: <!DOCTYPE html>
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:42.1014508Z <html lang="ja">
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:42.1014831Z <head>
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:42.1015183Z <meta charset="UTF-8">
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:42.1016965Z <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:42.1018322Z <title>【公式】現長株式会社｜シートシャッター施工・建築工事</title>
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:42.1018597Z <meta n
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:42.1094802Z [Build] Loaded index.html, first 200 chars: <!DOCTYPE html>
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:42.1095426Z <html lang="ja">
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:42.1097937Z <head>
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:42.1128776Z <meta charset="UTF-8">
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:42.1129897Z <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:42.1131407Z <title>【公式】現長株式会社｜シートシャッター施工・建築工事</title>
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:42.1132058Z <meta n
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:42.2141323Z  ✓ Generating static pages (4/4)
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:42.6371299Z    Finalizing page optimization ...
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:42.6371910Z    Collecting build traces ...
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.1740619Z 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.1839331Z Route (app)                              Size     First Load JS
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.1840337Z ┌ ○ /                                    142 B          87.5 kB
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.1841089Z └ ○ /_not-found                          873 B          88.2 kB
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.1841512Z + First Load JS shared by all            87.3 kB
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.1841917Z   ├ chunks/117-44e863620db02712.js       31.8 kB
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.1842407Z   ├ chunks/fd9d1056-749e5812300142af.js  53.6 kB
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.1842769Z   └ other shared chunks (total)          1.84 kB
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.1842955Z 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.1842961Z 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.1843161Z ○  (Static)  prerendered as static content
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.1843351Z 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2185082Z ##[group]Run echo "📁 public/の内容をout/にコピーしています..."
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2185475Z [36;1mecho "📁 public/の内容をout/にコピーしています..."[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2185788Z [36;1m# index.html以外のファイルとディレクトリを強制的に上書きコピー[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2186115Z [36;1mrsync -av --exclude='index.html' public/ out/[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2186424Z [36;1mecho "✅ コピー完了"[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2186651Z [36;1mecho ""[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2186860Z [36;1mecho "📊 コピー後のout/ディレクトリ:"[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2187152Z [36;1mls -lh out/img/*.png | head -5[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2219941Z shell: /usr/bin/bash -e {0}
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2220195Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2271498Z 📁 public/の内容をout/にコピーしています...
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2505067Z sending incremental file list
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2511882Z ./
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2512222Z .htaccess
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2512552Z favicon.ico
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2512874Z icon180.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2517574Z _monju/
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2518294Z _monju/index.html.backup.20251003_203219
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2519313Z _monju/index.html.backup.20251007_135854
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2520173Z _monju/index_gencho.html
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2520836Z _monju/assets/
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2521463Z _monju/assets/.gitkeep
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2521870Z _monju/images/
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2522248Z _monju/images/.gitkeep
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2522608Z css/
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2522926Z css/.gitkeep
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2523265Z css/core.min.css
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2528531Z css/layerBoard.css
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2528956Z css/slick-theme01.css
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2529544Z css/slick01.css
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2530102Z css/slick_style01.css
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2530564Z css/slick_style02.css
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2530958Z css/slick_style03.css
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2531296Z css/style.css
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2531607Z img/
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2531931Z img/00back12_sp01.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2541306Z img/00back21.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2541704Z img/00slider01.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2547371Z img/00slider02.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2555767Z img/00slider03.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2571211Z img/00slider04.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2578635Z img/00slider05.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2584046Z img/01cake01.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2584444Z img/01cake01_sp.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2584832Z img/btn03_close.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2585225Z img/btn03_open.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2585608Z img/btn_sns01.gif
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2585971Z img/btn_sns02.gif
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2586562Z img/favicon.ico
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2586900Z img/icon180.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2587236Z img/icon21.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2587560Z img/icon22.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2587867Z img/icon24.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2588501Z img/icon25.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2588846Z img/icon26.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2589204Z img/icon27.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2589535Z img/icon28.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2589869Z img/icon29.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2590206Z img/icon30.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2590543Z img/icon31.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2590888Z img/icon32.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2591246Z img/icon33.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2591590Z img/icon35.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2591938Z img/icon36.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2592305Z img/logo_blk03.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2592856Z img/logo_blk03_new.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2593323Z img/logo_menu01.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2593734Z img/logo_menu01_new.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2614161Z img/logo_wht08.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2614585Z img/logo_wht08_new.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2617760Z img/sp_btn01.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2618327Z img/sp_btn02.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2618696Z img/space01.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2619059Z img/top01.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2627640Z img/top01_sp.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2628244Z img/top02.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2633717Z img/top02_sp.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2634220Z img/top03.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2640804Z img/top03_sp.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2641439Z img/top04.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2645265Z img/top04_sp.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2647417Z img/trip2025.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2647809Z img/logo/
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2648909Z img/logo/9f5ea47e-6804-45d3-b67c-8d7f086ad0c6 (1)_transparent.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2649552Z img/original/
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2650113Z img/original/12cb2ba539fdff1f9fcef380d736ef79.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2656677Z img/original/1e5bd33cfea2ba7b16b640a0b058a08b.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2663432Z img/original/396989221601a8d0d5bdaa186c51d451.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2672318Z img/original/3c451c263d9ddfd9cd44923161401cb5.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2677264Z img/original/493ab989a93aa43cc759b61534d2b6ba.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2683308Z img/original/4c8772a5b3538a94399233d45337cad5.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2688992Z img/original/4cecf48f476f4a22948811556806041a.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2693076Z img/original/52b8bfed7f1c19062ae19c5a48e8c932.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2697962Z img/original/66be339a42c4e15ab5b2f32a93e821e0.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2699133Z img/original/6ea691b1a938acf1265ab0f6ed34c4f0.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2709747Z img/original/95ad7d43287adbbb0811160d6cf702c3.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2718650Z img/original/9d7da18ea30ecd033456ab10dcb29768.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2723496Z img/original/9dc421cd31afe6dcfdccf8b2044d3fa9.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2727987Z img/original/c72139febef1db4a95832aa08bb566af.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2734242Z img/original/e0ba663e054501f887a86a069fbb067d.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2740833Z img/original/e82cf91f655b813bd450cee8ed9874c0.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2748793Z img/original/fcdfcb44f1d7dcb3f843065f8898ba24.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2754191Z js/
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2754558Z js/.gitkeep
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2755006Z js/jquery.mb.YTPlayer.min.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2755423Z js/slick.min.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2755778Z js/slick.script.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2756174Z js/timber.master.min01.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.2765932Z js/tophe.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3175954Z 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3176506Z sent 7,283,946 bytes  received 1,751 bytes  14,571,394.00 bytes/sec
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3177233Z total size is 7,275,776  speedup is 1.00
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3183801Z ✅ コピー完了
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3184011Z 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3184284Z 📊 コピー後のout/ディレクトリ:
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3203277Z -rw-r--r-- 1 runner runner  981 Oct  8 09:45 out/img/btn03_close.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3204110Z -rw-r--r-- 1 runner runner  838 Oct  8 09:45 out/img/btn03_open.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3204639Z -rw-r--r-- 1 runner runner 4.7K Oct  8 09:45 out/img/icon180.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3205131Z -rw-r--r-- 1 runner runner  576 Oct  8 09:45 out/img/icon21.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3205594Z -rw-r--r-- 1 runner runner  711 Oct  8 09:45 out/img/icon22.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3228851Z ##[group]Run echo "🔄 public/_monju/index.htmlをout/index.htmlに上書きコピー..."
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3229440Z [36;1mecho "🔄 public/_monju/index.htmlをout/index.htmlに上書きコピー..."[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3229833Z [36;1mcp -f public/_monju/index.html out/index.html[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3230144Z [36;1mecho "✅ index.html上書き完了"[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3230402Z [36;1mecho "📊 CSS参照確認:"[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3230741Z [36;1mgrep -o "slick_style0[0-9].css" out/index.html || echo "CSS参照が見つかりません"[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3262299Z shell: /usr/bin/bash -e {0}
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3262550Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3311638Z 🔄 public/_monju/index.htmlをout/index.htmlに上書きコピー...
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3326539Z ✅ index.html上書き完了
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3326944Z 📊 CSS参照確認:
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3339492Z slick_style03.css
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3362612Z ##[group]Run echo "📁 生成されたファイル:"
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3362920Z [36;1mecho "📁 生成されたファイル:"[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3363177Z [36;1mls -la out/[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3363376Z [36;1mecho ""[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3363565Z [36;1mecho "📄 ブログページ確認:"[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3363859Z [36;1mls -la out/blog/ 2>/dev/null || echo "ブログフォルダはまだ作成されていません"[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3364161Z [36;1mecho ""[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3364356Z [36;1mecho "🔍 ヒーローセクションのHTML確認:"[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3364786Z [36;1mgrep -A 3 "slider_logo_container" out/index.html || echo "slider_logo_containerが見つかりません"[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3393243Z shell: /usr/bin/bash -e {0}
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3393489Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3441425Z 📁 生成されたファイル:
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3454471Z total 136
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3455008Z drwxr-xr-x  8 runner runner  4096 Oct  8 09:45 .
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3455690Z drwxr-xr-x 10 runner runner  4096 Oct  8 09:45 ..
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3456305Z -rw-r--r--  1 runner runner  1411 Oct  8 09:45 .htaccess
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3456888Z drwxr-xr-x  2 runner runner  4096 Oct  8 09:45 404
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3457297Z -rw-r--r--  1 runner runner  6177 Oct  8 09:45 404.html
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3457684Z drwxr-xr-x  4 runner runner  4096 Oct  8 09:45 _monju
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3458258Z drwxr-xr-x  4 runner runner  4096 Oct  8 09:45 _next
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3458651Z drwxr-xr-x  2 runner runner  4096 Oct  8 09:45 css
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3459045Z -rw-r--r--  1 runner runner 15086 Oct  8 09:45 favicon.ico
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3459456Z -rw-r--r--  1 runner runner  4745 Oct  8 09:45 icon180.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3459859Z drwxr-xr-x  4 runner runner  4096 Oct  8 09:45 img
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3460249Z -rw-r--r--  1 runner runner 30916 Oct  8 09:45 index.html
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3460645Z -rw-r--r--  1 runner runner 32952 Oct  8 09:45 index.txt
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3461034Z drwxr-xr-x  2 runner runner  4096 Oct  8 09:45 js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3461246Z 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3461443Z 📄 ブログページ確認:
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3470565Z ブログフォルダはまだ作成されていません
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3470798Z 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3471049Z 🔍 ヒーローセクションのHTML確認:
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3483842Z <div class="slider_logo_container horizon" data-animate-in="preset:scaleOut;duration:10000ms;" data-threshold="0.3">
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3484450Z <img src="img/logo_wht08_new.png" alt="" >
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3484973Z <div class="company-name">現長株式会社</div>
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3485241Z </div>
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3561637Z ##[group]Run SamKirkland/FTP-Deploy-Action@v4.3.4
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3561964Z with:
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3562304Z   server: ***
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3562521Z   username: ***
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3562740Z   password: ***
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3562931Z   local-dir: ./out/
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3563151Z   server-dir: /public_html/gencho.site/
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3563521Z   exclude: **/.git*
+build-and-deploy	UNKNOWN STEP	**/.git*/**
+build-and-deploy	UNKNOWN STEP	**/node_modules/**
+build-and-deploy	UNKNOWN STEP	**/.DS_Store
+build-and-deploy	UNKNOWN STEP	**/Thumbs.db
+build-and-deploy	UNKNOWN STEP	cms/**
+build-and-deploy	UNKNOWN STEP	
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3563860Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3991668Z ----------------------------------------------------------------
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3995820Z 🚀 Thanks for using ftp-deploy. Let's deploy some stuff!   
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3996965Z ----------------------------------------------------------------
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3997604Z If you found this project helpful, please support it
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3998613Z by giving it a ⭐ on Github --> https://github.com/SamKirkland/FTP-Deploy-Action
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:47.3999611Z or add a badge 🏷️ to your projects readme --> https://github.com/SamKirkland/FTP-Deploy-Action#badge
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9162884Z ----------------------------------------------------------------
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9301176Z Last published on 📅 Wednesday, October 8, 2025 at 9:40 AM
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9335355Z ----------------------------------------------------------------
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9369548Z Local Files:	120
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9370249Z Server Files:	120
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9370841Z ----------------------------------------------------------------
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9371552Z Calculating differences between client & server
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9372279Z ----------------------------------------------------------------
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9385727Z 📁 Create: _next/GvA6aXQGOMaV26K1skk-B
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9386465Z 📁 Create: _next/static/GvA6aXQGOMaV26K1skk-B
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9387342Z 📄 Upload: _next/static/GvA6aXQGOMaV26K1skk-B/_buildManifest.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9388535Z 📄 Upload: _next/static/GvA6aXQGOMaV26K1skk-B/_ssgManifest.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9389246Z 🔁 File replace: 404.html
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9389775Z 🔁 File replace: 404/index.html
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9390264Z 🔁 File replace: index.txt
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9390851Z 📁 Delete: _next/ChnlTvIutkd1tplLClPgv    
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9391543Z 📁 Delete: _next/static/ChnlTvIutkd1tplLClPgv    
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9392412Z ⚖️  File content is the same, doing nothing: _monju/index_gencho.html
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9393277Z ⚖️  File content is the same, doing nothing: _monju/index.html
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9394304Z ⚖️  File content is the same, doing nothing: _monju/index.html.backup.20251003_203219
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9395449Z ⚖️  File content is the same, doing nothing: _monju/index.html.backup.20251007_135854
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9396545Z ⚖️  File content is the same, doing nothing: _next/static/chunks/117-44e863620db02712.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9397886Z ⚖️  File content is the same, doing nothing: _next/static/chunks/app/_not-found/page-eaa53ae320539b27.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9399363Z ⚖️  File content is the same, doing nothing: _next/static/chunks/app/layout-c54d42dbfd504823.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9400580Z ⚖️  File content is the same, doing nothing: _next/static/chunks/app/page-0619e73f7895cdcd.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9401762Z ⚖️  File content is the same, doing nothing: _next/static/chunks/fd9d1056-749e5812300142af.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9402997Z ⚖️  File content is the same, doing nothing: _next/static/chunks/framework-f66176bb897dc684.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9404240Z ⚖️  File content is the same, doing nothing: _next/static/chunks/main-app-385af72fb34261b0.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9405147Z ⚖️  File content is the same, doing nothing: _next/static/chunks/main-bde5f596696c1b24.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9405868Z ⚖️  File content is the same, doing nothing: _next/static/chunks/pages/_app-72b849fbd24ac258.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9406971Z ⚖️  File content is the same, doing nothing: _next/static/chunks/pages/_error-7ba65e1336b92748.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9408599Z ⚖️  File content is the same, doing nothing: _next/static/chunks/polyfills-42372ed130431b0a.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9409648Z ⚖️  File content is the same, doing nothing: _next/static/chunks/webpack-100b9e646d9c912e.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9410482Z ⚖️  File content is the same, doing nothing: .htaccess
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9411269Z ⚖️  File content is the same, doing nothing: css/core.min.css
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9411940Z ⚖️  File content is the same, doing nothing: css/layerBoard.css
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9412471Z ⚖️  File content is the same, doing nothing: css/slick_style01.css
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9412976Z ⚖️  File content is the same, doing nothing: css/slick_style02.css
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9413472Z ⚖️  File content is the same, doing nothing: css/slick_style03.css
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9414160Z ⚖️  File content is the same, doing nothing: css/slick-theme01.css
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9414638Z ⚖️  File content is the same, doing nothing: css/slick01.css
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9415109Z ⚖️  File content is the same, doing nothing: css/style.css
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9415555Z ⚖️  File content is the same, doing nothing: favicon.ico
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9415991Z ⚖️  File content is the same, doing nothing: icon180.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9416465Z ⚖️  File content is the same, doing nothing: img/00back12_sp01.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9416947Z ⚖️  File content is the same, doing nothing: img/00back21.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9417424Z ⚖️  File content is the same, doing nothing: img/00slider01.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9417899Z ⚖️  File content is the same, doing nothing: img/00slider02.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9418550Z ⚖️  File content is the same, doing nothing: img/00slider03.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9419036Z ⚖️  File content is the same, doing nothing: img/00slider04.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9419523Z ⚖️  File content is the same, doing nothing: img/00slider05.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9420002Z ⚖️  File content is the same, doing nothing: img/01cake01_sp.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9420484Z ⚖️  File content is the same, doing nothing: img/01cake01.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9420952Z ⚖️  File content is the same, doing nothing: img/btn_sns01.gif
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9421420Z ⚖️  File content is the same, doing nothing: img/btn_sns02.gif
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9421897Z ⚖️  File content is the same, doing nothing: img/btn03_close.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9422380Z ⚖️  File content is the same, doing nothing: img/btn03_open.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9422846Z ⚖️  File content is the same, doing nothing: img/favicon.ico
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9423309Z ⚖️  File content is the same, doing nothing: img/icon180.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9423765Z ⚖️  File content is the same, doing nothing: img/icon21.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9424217Z ⚖️  File content is the same, doing nothing: img/icon22.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9424686Z ⚖️  File content is the same, doing nothing: img/icon24.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9425140Z ⚖️  File content is the same, doing nothing: img/icon25.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9425593Z ⚖️  File content is the same, doing nothing: img/icon26.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9426046Z ⚖️  File content is the same, doing nothing: img/icon27.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9426491Z ⚖️  File content is the same, doing nothing: img/icon28.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9426929Z ⚖️  File content is the same, doing nothing: img/icon29.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9427366Z ⚖️  File content is the same, doing nothing: img/icon30.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9427808Z ⚖️  File content is the same, doing nothing: img/icon31.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9428358Z ⚖️  File content is the same, doing nothing: img/icon32.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9428801Z ⚖️  File content is the same, doing nothing: img/icon33.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9429245Z ⚖️  File content is the same, doing nothing: img/icon35.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9429854Z ⚖️  File content is the same, doing nothing: img/icon36.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9430354Z ⚖️  File content is the same, doing nothing: img/logo_blk03_new.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9430851Z ⚖️  File content is the same, doing nothing: img/logo_blk03.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9431483Z ⚖️  File content is the same, doing nothing: img/logo_menu01_new.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9432213Z ⚖️  File content is the same, doing nothing: img/logo_menu01.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9432902Z ⚖️  File content is the same, doing nothing: img/logo_wht08_new.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9433645Z ⚖️  File content is the same, doing nothing: img/logo_wht08.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9434668Z ⚖️  File content is the same, doing nothing: img/logo/9f5ea47e-6804-45d3-b67c-8d7f086ad0c6 (1)_transparent.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9435865Z ⚖️  File content is the same, doing nothing: img/original/12cb2ba539fdff1f9fcef380d736ef79.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9436606Z ⚖️  File content is the same, doing nothing: img/original/1e5bd33cfea2ba7b16b640a0b058a08b.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9437320Z ⚖️  File content is the same, doing nothing: img/original/396989221601a8d0d5bdaa186c51d451.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9438123Z ⚖️  File content is the same, doing nothing: img/original/3c451c263d9ddfd9cd44923161401cb5.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9438827Z ⚖️  File content is the same, doing nothing: img/original/493ab989a93aa43cc759b61534d2b6ba.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9439510Z ⚖️  File content is the same, doing nothing: img/original/4c8772a5b3538a94399233d45337cad5.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9440190Z ⚖️  File content is the same, doing nothing: img/original/4cecf48f476f4a22948811556806041a.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9440878Z ⚖️  File content is the same, doing nothing: img/original/52b8bfed7f1c19062ae19c5a48e8c932.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9441568Z ⚖️  File content is the same, doing nothing: img/original/66be339a42c4e15ab5b2f32a93e821e0.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9442258Z ⚖️  File content is the same, doing nothing: img/original/6ea691b1a938acf1265ab0f6ed34c4f0.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9442960Z ⚖️  File content is the same, doing nothing: img/original/95ad7d43287adbbb0811160d6cf702c3.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9443654Z ⚖️  File content is the same, doing nothing: img/original/9d7da18ea30ecd033456ab10dcb29768.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9444354Z ⚖️  File content is the same, doing nothing: img/original/9dc421cd31afe6dcfdccf8b2044d3fa9.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9445046Z ⚖️  File content is the same, doing nothing: img/original/c72139febef1db4a95832aa08bb566af.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9445735Z ⚖️  File content is the same, doing nothing: img/original/e0ba663e054501f887a86a069fbb067d.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9446425Z ⚖️  File content is the same, doing nothing: img/original/e82cf91f655b813bd450cee8ed9874c0.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9447113Z ⚖️  File content is the same, doing nothing: img/original/fcdfcb44f1d7dcb3f843065f8898ba24.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9447677Z ⚖️  File content is the same, doing nothing: img/sp_btn01.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9448245Z ⚖️  File content is the same, doing nothing: img/sp_btn02.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9448722Z ⚖️  File content is the same, doing nothing: img/space01.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9449183Z ⚖️  File content is the same, doing nothing: img/top01_sp.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9449638Z ⚖️  File content is the same, doing nothing: img/top01.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9450111Z ⚖️  File content is the same, doing nothing: img/top02_sp.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9450565Z ⚖️  File content is the same, doing nothing: img/top02.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9451017Z ⚖️  File content is the same, doing nothing: img/top03_sp.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9451463Z ⚖️  File content is the same, doing nothing: img/top03.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9451913Z ⚖️  File content is the same, doing nothing: img/top04_sp.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9452359Z ⚖️  File content is the same, doing nothing: img/top04.jpg
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9452817Z ⚖️  File content is the same, doing nothing: img/trip2025.png
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9453260Z ⚖️  File content is the same, doing nothing: index.html
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9453772Z ⚖️  File content is the same, doing nothing: js/jquery.mb.YTPlayer.min.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9454444Z ⚖️  File content is the same, doing nothing: js/slick.min.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9454919Z ⚖️  File content is the same, doing nothing: js/slick.script.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9455547Z ⚖️  File content is the same, doing nothing: js/timber.master.min01.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9456038Z ⚖️  File content is the same, doing nothing: js/tophe.js
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9456445Z ----------------------------------------------------------------
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9456849Z Making changes to 9 files/folders to sync server state
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9457270Z Uploading: 304 B -- Deleting: 304 B -- Replacing: 45.3 kB
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9457672Z ----------------------------------------------------------------
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:50.9458147Z creating folder "_next/GvA6aXQGOMaV26K1skk-B/"
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:51.8902727Z creating folder "_next/static/GvA6aXQGOMaV26K1skk-B/"
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:53.3142957Z uploading "_next/static/GvA6aXQGOMaV26K1skk-B/_buildManifest.js"
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:53.9334484Z uploading "_next/static/GvA6aXQGOMaV26K1skk-B/_ssgManifest.js"
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:54.5539540Z replacing "404.html"
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:55.1854408Z replacing "404/index.html"
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:55.8021169Z replacing "index.txt"
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:56.5645682Z removing folder "//public_html/gencho.site/_next/ChnlTvIutkd1tplLClPgv"
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:57.8285949Z removing folder "//public_html/gencho.site/_next/static/ChnlTvIutkd1tplLClPgv"
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:59.4092875Z ----------------------------------------------------------------
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:45:59.4094344Z 🎉 Sync complete. Saving current server state to "/public_html/gencho.site/.ftp-deploy-sync-state.json"
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.1772718Z ----------------------------------------------------------------
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.1775739Z Time spent hashing: 60 milliseconds
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.1776649Z Time spent connecting to server: 2 seconds
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.1777826Z Time spent deploying: 9.2 seconds (4.94 kB/second)
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.1778787Z   - changing dirs: 2.3 seconds
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.1779336Z   - logging: 7 milliseconds
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.1780009Z ----------------------------------------------------------------
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.1780706Z Total time: 12.7 seconds
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.1781232Z ----------------------------------------------------------------
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.3924974Z ##[group]Run echo "🎉 デプロイが正常に完了しました！"
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.3925310Z [36;1mecho "🎉 デプロイが正常に完了しました！"[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.3925612Z [36;1mecho "🌐 サイトURL: https://gencho.site"[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.3925890Z [36;1mecho ""[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.3926087Z [36;1mecho "📝 デプロイ情報:"[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.3926310Z [36;1mecho "- トリガー: push"[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.3926571Z [36;1mif [ "push" == "repository_dispatch" ]; then[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.3926870Z [36;1m  echo "- WordPressアクション: "[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.3927124Z [36;1m  echo "- 記事タイトル: "[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.3927332Z [36;1mfi[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.3927551Z [36;1mif [ "push" == "workflow_dispatch" ]; then[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.3927852Z [36;1m  echo "- 理由: "[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.3928366Z [36;1mfi[0m
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.3960123Z shell: /usr/bin/bash -e {0}
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.3960374Z ##[endgroup]
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.4011061Z 🎉 デプロイが正常に完了しました！
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.4011599Z 🌐 サイトURL: https://gencho.site
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.4011940Z 
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.4012071Z 📝 デプロイ情報:
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.4012286Z - トリガー: push
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.4057486Z Post job cleanup.
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.5644575Z Cache hit occurred on the primary key node-cache-Linux-x64-npm-cf519dab10a5fcd0df7da9ef77a534e0d4becc020815a167f4adf4a66672deaf, not saving cache.
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.5746340Z Post job cleanup.
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.6693843Z [command]/usr/bin/git version
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.6730694Z git version 2.51.0
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.6775800Z Temporarily overriding HOME='/home/runner/work/_temp/2a00706a-3bf1-4ac6-98ab-1e6e9dff5d02' before making global git config changes
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.6777605Z Adding repository directory to the temporary git global config as a safe directory
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.6783026Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gencho-website/gencho-website
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.6823783Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.6855749Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.7082360Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.7103709Z http.https://github.com/.extraheader
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.7117467Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.7149324Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-deploy	UNKNOWN STEP	2025-10-08T09:46:00.7472234Z Cleaning up orphan processes

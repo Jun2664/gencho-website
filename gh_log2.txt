@@ -1,0 +1,582 @@
+* Request at 2025-10-08 22:19:35.0996494 +0900 JST m=+0.134016401
+* Request to https://api.github.com/repos/Jun2664/gencho-website/actions/runs/18344384623?exclude_pull_requests=true
+* Request took 545.7232ms
+* Request at 2025-10-08 22:19:35.6535606 +0900 JST m=+0.687925801
+* Request to https://api.github.com/repos/Jun2664/gencho-website/actions/workflows/193476791
+* Request took 319.9989ms
+* Request at 2025-10-08 22:19:35.9776427 +0900 JST m=+1.012006801
+* Request to https://api.github.com/repos/Jun2664/gencho-website/actions/runs/18344384623/jobs?per_page=100
+* Request took 342.22ms
+* Request at 2025-10-08 22:19:36.3222111 +0900 JST m=+1.356574001
+* Request to https://api.github.com/repos/Jun2664/gencho-website/actions/runs/18344384623/logs
+* Request took 280.6226ms
+* Request at 2025-10-08 22:19:36.6158328 +0900 JST m=+1.650194801
+* Request to https://results-receiver.actions.githubusercontent.com/rest/runs/8baac0c8-19f3-4bfa-b5cb-a887dd6c7e9a/logs?filename=logs_47172380660.zip&signature=1759929576.b7d14c9e424f0f382e0082b0a663e177775ac136ef8e952c55c5ddfad6d08161
+* Request took 607.4446ms
+build-and-deploy	Set up job	﻿2025-10-08T12:19:13.2017101Z Current runner version: '2.328.0'
+build-and-deploy	Set up job	2025-10-08T12:19:13.2041003Z ##[group]Runner Image Provisioner
+build-and-deploy	Set up job	2025-10-08T12:19:13.2042187Z Hosted Compute Agent
+build-and-deploy	Set up job	2025-10-08T12:19:13.2042983Z Version: 20250912.392
+build-and-deploy	Set up job	2025-10-08T12:19:13.2043622Z Commit: d921fda672a98b64f4f82364647e2f10b2267d0b
+build-and-deploy	Set up job	2025-10-08T12:19:13.2044263Z Build Date: 2025-09-12T15:23:14Z
+build-and-deploy	Set up job	2025-10-08T12:19:13.2044938Z ##[endgroup]
+build-and-deploy	Set up job	2025-10-08T12:19:13.2045495Z ##[group]Operating System
+build-and-deploy	Set up job	2025-10-08T12:19:13.2046085Z Ubuntu
+build-and-deploy	Set up job	2025-10-08T12:19:13.2046575Z 24.04.3
+build-and-deploy	Set up job	2025-10-08T12:19:13.2047002Z LTS
+build-and-deploy	Set up job	2025-10-08T12:19:13.2047498Z ##[endgroup]
+build-and-deploy	Set up job	2025-10-08T12:19:13.2048057Z ##[group]Runner Image
+build-and-deploy	Set up job	2025-10-08T12:19:13.2048624Z Image: ubuntu-24.04
+build-and-deploy	Set up job	2025-10-08T12:19:13.2049142Z Version: 20250929.60.1
+build-and-deploy	Set up job	2025-10-08T12:19:13.2050203Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250929.60/images/ubuntu/Ubuntu2404-Readme.md
+build-and-deploy	Set up job	2025-10-08T12:19:13.2051599Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250929.60
+build-and-deploy	Set up job	2025-10-08T12:19:13.2053254Z ##[endgroup]
+build-and-deploy	Set up job	2025-10-08T12:19:13.2054756Z ##[group]GITHUB_TOKEN Permissions
+build-and-deploy	Set up job	2025-10-08T12:19:13.2056834Z Contents: read
+build-and-deploy	Set up job	2025-10-08T12:19:13.2057478Z Metadata: read
+build-and-deploy	Set up job	2025-10-08T12:19:13.2058099Z Packages: read
+build-and-deploy	Set up job	2025-10-08T12:19:13.2058732Z ##[endgroup]
+build-and-deploy	Set up job	2025-10-08T12:19:13.2060753Z Secret source: Actions
+build-and-deploy	Set up job	2025-10-08T12:19:13.2061572Z Prepare workflow directory
+build-and-deploy	Set up job	2025-10-08T12:19:13.2393499Z Prepare all required actions
+build-and-deploy	Set up job	2025-10-08T12:19:13.2433360Z Getting action download info
+build-and-deploy	Set up job	2025-10-08T12:19:13.6692191Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+build-and-deploy	Set up job	2025-10-08T12:19:14.1007890Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+build-and-deploy	Set up job	2025-10-08T12:19:14.2349176Z Download action repository 'SamKirkland/FTP-Deploy-Action@v4.3.4' (SHA:8a24039354ee91000cb948cb4a1dbdf1a1b94a3c)
+build-and-deploy	Set up job	2025-10-08T12:19:14.8731246Z Complete job name: build-and-deploy
+build-and-deploy	📥 リポジトリをチェックアウト	﻿2025-10-08T12:19:14.9579279Z ##[group]Run actions/checkout@v4
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:14.9580661Z with:
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:14.9581514Z   repository: Jun2664/gencho-website
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:14.9583151Z   token: ***
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:14.9584011Z   ssh-strict: true
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:14.9584853Z   ssh-user: git
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:14.9585755Z   persist-credentials: true
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:14.9586706Z   clean: true
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:14.9587563Z   sparse-checkout-cone-mode: true
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:14.9588598Z   fetch-depth: 1
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:14.9589443Z   fetch-tags: false
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:14.9590298Z   show-progress: true
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:14.9591159Z   lfs: false
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:14.9592111Z   submodules: false
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:14.9593000Z   set-safe-directory: true
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:14.9594222Z ##[endgroup]
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.0668664Z Syncing repository: Jun2664/gencho-website
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.0671386Z ##[group]Getting Git version info
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.0673262Z Working directory is '/home/runner/work/gencho-website/gencho-website'
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.0675462Z [command]/usr/bin/git version
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.1634147Z git version 2.51.0
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.1663827Z ##[endgroup]
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.1686316Z Temporarily overriding HOME='/home/runner/work/_temp/12fdb53e-572e-4f7d-a6dd-2bc7cc479dd1' before making global git config changes
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.1689801Z Adding repository directory to the temporary git global config as a safe directory
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.1693355Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gencho-website/gencho-website
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.1764507Z Deleting the contents of '/home/runner/work/gencho-website/gencho-website'
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.1768357Z ##[group]Initializing the repository
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.1772455Z [command]/usr/bin/git init /home/runner/work/gencho-website/gencho-website
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2628832Z hint: Using 'master' as the name for the initial branch. This default branch name
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2631344Z hint: is subject to change. To configure the initial branch name to use in all
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2633865Z hint: of your new repositories, which will suppress this warning, call:
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2635753Z hint:
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2636830Z hint: 	git config --global init.defaultBranch <name>
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2638175Z hint:
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2639445Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2641269Z hint: 'development'. The just-created branch can be renamed via this command:
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2642855Z hint:
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2643675Z hint: 	git branch -m <name>
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2644590Z hint:
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2645848Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2670318Z Initialized empty Git repository in /home/runner/work/gencho-website/gencho-website/.git/
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2685838Z [command]/usr/bin/git remote add origin https://github.com/Jun2664/gencho-website
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2809405Z ##[endgroup]
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2812124Z ##[group]Disabling automatic garbage collection
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2814460Z [command]/usr/bin/git config --local gc.auto 0
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2848420Z ##[endgroup]
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2850813Z ##[group]Setting up auth
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2856627Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.2892929Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.4484756Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.4518132Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.4739733Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.4776102Z ##[endgroup]
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.4778645Z ##[group]Fetching the repository
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:15.4787475Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +178e2d9aa47336057442c702d77077d33313ac8d:refs/remotes/origin/main
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:16.2259387Z From https://github.com/Jun2664/gencho-website
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:16.2262248Z  * [new ref]         178e2d9aa47336057442c702d77077d33313ac8d -> origin/main
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:16.2332991Z ##[endgroup]
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:16.2333897Z ##[group]Determining the checkout info
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:16.2336662Z ##[endgroup]
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:16.2342172Z [command]/usr/bin/git sparse-checkout disable
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:16.2421572Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:16.2448807Z ##[group]Checking out the ref
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:16.2453314Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:16.2763254Z Switched to a new branch 'main'
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:16.2765049Z branch 'main' set up to track 'origin/main'.
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:16.2773077Z ##[endgroup]
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:16.2812142Z [command]/usr/bin/git log -1 --format=%H
+build-and-deploy	📥 リポジトリをチェックアウト	2025-10-08T12:19:16.2833686Z 178e2d9aa47336057442c702d77077d33313ac8d
+build-and-deploy	📦 Node.jsをセットアップ	﻿2025-10-08T12:19:16.3063284Z ##[group]Run actions/setup-node@v4
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:16.3063624Z with:
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:16.3063849Z   node-version: 20
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:16.3064078Z   cache: npm
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:16.3064291Z   always-auth: false
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:16.3064529Z   check-latest: false
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:16.3064900Z   token: ***
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:16.3065120Z ##[endgroup]
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:16.5240650Z Found in cache @ /opt/hostedtoolcache/node/20.19.5/x64
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:16.5247548Z ##[group]Environment details
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:18.9678492Z node: v20.19.5
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:18.9679128Z npm: 10.8.2
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:18.9679421Z yarn: 1.22.22
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:18.9680245Z ##[endgroup]
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:18.9702134Z [command]/opt/hostedtoolcache/node/20.19.5/x64/bin/npm config get cache
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:19.2518413Z /home/runner/.npm
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:19.5435176Z Cache hit for: node-cache-Linux-x64-npm-cf519dab10a5fcd0df7da9ef77a534e0d4becc020815a167f4adf4a66672deaf
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:20.7694633Z Received 41943040 of 125031125 (33.5%), 40.0 MBs/sec
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:21.2683545Z Received 125031125 of 125031125 (100.0%), 79.5 MBs/sec
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:21.2760585Z Cache Size: ~119 MB (125031125 B)
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:21.2762924Z [command]/usr/bin/tar -xf /home/runner/work/_temp/3a3adadd-b0c7-4528-b8cf-887b286de34b/cache.tzst -P -C /home/runner/work/gencho-website/gencho-website --use-compress-program unzstd
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:21.4844112Z Cache restored successfully
+build-and-deploy	📦 Node.jsをセットアップ	2025-10-08T12:19:21.5086772Z Cache restored from key: node-cache-Linux-x64-npm-cf519dab10a5fcd0df7da9ef77a534e0d4becc020815a167f4adf4a66672deaf
+build-and-deploy	🔧 依存関係をインストール	﻿2025-10-08T12:19:21.5234580Z ##[group]Run npm ci
+build-and-deploy	🔧 依存関係をインストール	2025-10-08T12:19:21.5234896Z [36;1mnpm ci[0m
+build-and-deploy	🔧 依存関係をインストール	2025-10-08T12:19:21.5337216Z shell: /usr/bin/bash -e {0}
+build-and-deploy	🔧 依存関係をインストール	2025-10-08T12:19:21.5337516Z ##[endgroup]
+build-and-deploy	🔧 依存関係をインストール	2025-10-08T12:19:29.8226631Z 
+build-and-deploy	🔧 依存関係をインストール	2025-10-08T12:19:29.8236643Z added 208 packages, and audited 209 packages in 8s
+build-and-deploy	🔧 依存関係をインストール	2025-10-08T12:19:29.8237184Z 
+build-and-deploy	🔧 依存関係をインストール	2025-10-08T12:19:29.8237474Z 59 packages are looking for funding
+build-and-deploy	🔧 依存関係をインストール	2025-10-08T12:19:29.8237961Z   run `npm fund` for details
+build-and-deploy	🔧 依存関係をインストール	2025-10-08T12:19:29.8270141Z 
+build-and-deploy	🔧 依存関係をインストール	2025-10-08T12:19:29.8271225Z 1 high severity vulnerability
+build-and-deploy	🔧 依存関係をインストール	2025-10-08T12:19:29.8272266Z 
+build-and-deploy	🔧 依存関係をインストール	2025-10-08T12:19:29.8272918Z To address all issues (including breaking changes), run:
+build-and-deploy	🔧 依存関係をインストール	2025-10-08T12:19:29.8273754Z   npm audit fix --force
+build-and-deploy	🔧 依存関係をインストール	2025-10-08T12:19:29.8274930Z 
+build-and-deploy	🔧 依存関係をインストール	2025-10-08T12:19:29.8275151Z Run `npm audit` for details.
+build-and-deploy	🧹 Next.jsキャッシュをクリア	﻿2025-10-08T12:19:29.8773332Z ##[group]Run echo "🧹 Next.jsキャッシュをクリアしています..."
+build-and-deploy	🧹 Next.jsキャッシュをクリア	2025-10-08T12:19:29.8773774Z [36;1mecho "🧹 Next.jsキャッシュをクリアしています..."[0m
+build-and-deploy	🧹 Next.jsキャッシュをクリア	2025-10-08T12:19:29.8774067Z [36;1mrm -rf .next[0m
+build-and-deploy	🧹 Next.jsキャッシュをクリア	2025-10-08T12:19:29.8774282Z [36;1mrm -rf out[0m
+build-and-deploy	🧹 Next.jsキャッシュをクリア	2025-10-08T12:19:29.8774491Z [36;1mecho "✅ キャッシュクリア完了"[0m
+build-and-deploy	🧹 Next.jsキャッシュをクリア	2025-10-08T12:19:29.8809912Z shell: /usr/bin/bash -e {0}
+build-and-deploy	🧹 Next.jsキャッシュをクリア	2025-10-08T12:19:29.8810216Z ##[endgroup]
+build-and-deploy	🧹 Next.jsキャッシュをクリア	2025-10-08T12:19:29.8864762Z 🧹 Next.jsキャッシュをクリアしています...
+build-and-deploy	🧹 Next.jsキャッシュをクリア	2025-10-08T12:19:29.8886541Z ✅ キャッシュクリア完了
+build-and-deploy	🏗️ サイトをビルド	﻿2025-10-08T12:19:29.8918369Z ##[group]Run npm run build
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:29.8918659Z [36;1mnpm run build[0m
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:29.8948344Z shell: /usr/bin/bash -e {0}
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:29.8948601Z env:
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:29.8948789Z   NODE_ENV: production
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:29.8949009Z ##[endgroup]
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:30.0122527Z 
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:30.0123227Z > gencho-website@1.0.0 build
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:30.0123820Z > next build
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:30.0124040Z 
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:30.5434730Z ⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:30.5594590Z Attention: Next.js now collects completely anonymous telemetry regarding usage.
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:30.5596159Z This information is used to shape Next.js' roadmap and prioritize features.
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:30.5597683Z You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:30.5598783Z https://nextjs.org/telemetry
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:30.5599154Z 
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:30.6256718Z   ▲ Next.js 14.2.33
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:30.6258315Z 
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:30.6855042Z    Creating an optimized production build ...
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:37.2439476Z  ✓ Compiled successfully
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:37.2446137Z    Linting and checking validity of types ...
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:38.9953965Z    Collecting page data ...
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:39.7188078Z    Generating static pages (0/4) ...
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:39.9571641Z [Build] Loaded index.html, first 200 chars: <!DOCTYPE html>
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:39.9572522Z <html lang="ja">
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:39.9572870Z <head>
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:39.9573497Z <!-- Last updated: 2025-10-08 20:30 JST - Fix scroll blackout bug -->
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:39.9574193Z <meta charset="UTF-8">
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:39.9574874Z <meta content="width=device-width,initial-scale=1.0,maximum-scale=1
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:39.9575751Z [Build] Loaded index.html, first 200 chars: <!DOCTYPE html>
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:39.9576874Z <html lang="ja">
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:39.9577211Z <head>
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:39.9577864Z <!-- Last updated: 2025-10-08 20:30 JST - Fix scroll blackout bug -->
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:39.9578511Z <meta charset="UTF-8">
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:39.9579201Z <meta content="width=device-width,initial-scale=1.0,maximum-scale=1
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:39.9597477Z    Generating static pages (1/4) 
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:39.9598025Z    Generating static pages (2/4) 
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:40.0693289Z    Generating static pages (3/4) 
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:40.0916735Z  ✓ Generating static pages (4/4)
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:40.2845638Z    Finalizing page optimization ...
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:40.2846241Z    Collecting build traces ...
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:45.0223328Z 
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:45.0324860Z Route (app)                              Size     First Load JS
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:45.0326014Z ┌ ○ /                                    142 B          87.5 kB
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:45.0326894Z └ ○ /_not-found                          873 B          88.2 kB
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:45.0327611Z + First Load JS shared by all            87.3 kB
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:45.0328265Z   ├ chunks/117-44e863620db02712.js       31.8 kB
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:45.0328920Z   ├ chunks/fd9d1056-749e5812300142af.js  53.6 kB
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:45.0329639Z   └ other shared chunks (total)          1.84 kB
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:45.0329996Z 
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:45.0330010Z 
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:45.0330427Z ○  (Static)  prerendered as static content
+build-and-deploy	🏗️ サイトをビルド	2025-10-08T12:19:45.0330767Z 
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	﻿2025-10-08T12:19:45.0650185Z ##[group]Run echo "📁 public/の内容をout/にコピーしています..."
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0650611Z [36;1mecho "📁 public/の内容をout/にコピーしています..."[0m
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0650922Z [36;1m# index.html以外のファイルとディレクトリを強制的に上書きコピー[0m
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0651253Z [36;1mrsync -av --exclude='index.html' public/ out/[0m
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0651555Z [36;1mecho "✅ コピー完了"[0m
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0651771Z [36;1mecho ""[0m
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0652187Z [36;1mecho "📊 コピー後のout/ディレクトリ:"[0m
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0652482Z [36;1mls -lh out/img/*.png | head -5[0m
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0686163Z shell: /usr/bin/bash -e {0}
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0686418Z ##[endgroup]
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0737585Z 📁 public/の内容をout/にコピーしています...
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0961322Z sending incremental file list
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0968227Z ./
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0968711Z .htaccess
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0969046Z favicon.ico
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0969369Z icon180.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0974611Z _monju/
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0975064Z _monju/index.html.backup.20251003_203219
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0975701Z _monju/index.html.backup.20251007_135854
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0976163Z _monju/index_gencho.html
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0976466Z _monju/assets/
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0976693Z _monju/assets/.gitkeep
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0976918Z _monju/images/
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0977123Z _monju/images/.gitkeep
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0977328Z css/
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0977502Z css/.gitkeep
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0979036Z css/core.min.css
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0986082Z css/layerBoard.css
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0986532Z css/slick-theme01.css
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0986899Z css/slick01.css
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0987260Z css/slick_style01.css
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0987618Z css/slick_style02.css
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0987962Z css/slick_style03.css
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0988453Z css/style.css
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0988661Z img/
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0988852Z img/00back12_sp01.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0998093Z img/00back21.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.0998497Z img/00slider01.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1005499Z img/00slider02.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1014601Z img/00slider03.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1025569Z img/00slider04.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1031280Z img/00slider05.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1038175Z img/01cake01.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1038594Z img/01cake01_sp.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1038990Z img/btn03_close.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1039370Z img/btn03_open.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1039742Z img/btn_sns01.gif
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1040105Z img/btn_sns02.gif
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1040473Z img/favicon.ico
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1040750Z img/icon180.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1041176Z img/icon21.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1041375Z img/icon22.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1041559Z img/icon24.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1041740Z img/icon25.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1042155Z img/icon26.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1042378Z img/icon27.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1042566Z img/icon28.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1042744Z img/icon29.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1043035Z img/icon30.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1043281Z img/icon31.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1043467Z img/icon32.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1043647Z img/icon33.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1043839Z img/icon35.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1044018Z img/icon36.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1044267Z img/logo_blk03.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1044673Z img/logo_blk03_new.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1045265Z img/logo_menu01.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1045651Z img/logo_menu01_new.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1069915Z img/logo_wht08.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1070360Z img/logo_wht08_new.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1073859Z img/sp_btn01.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1074271Z img/sp_btn02.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1074652Z img/space01.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1075023Z img/top01.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1084977Z img/top01_sp.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1085482Z img/top02.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1090993Z img/top02_sp.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1091722Z img/top03.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1097465Z img/top03_sp.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1097847Z img/top04.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1102033Z img/top04_sp.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1104308Z img/trip2025.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1104915Z img/logo/
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1105523Z img/logo/9f5ea47e-6804-45d3-b67c-8d7f086ad0c6 (1)_transparent.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1106225Z img/original/
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1106535Z img/original/12cb2ba539fdff1f9fcef380d736ef79.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1113729Z img/original/1e5bd33cfea2ba7b16b640a0b058a08b.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1120402Z img/original/396989221601a8d0d5bdaa186c51d451.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1127709Z img/original/3c451c263d9ddfd9cd44923161401cb5.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1133191Z img/original/493ab989a93aa43cc759b61534d2b6ba.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1138972Z img/original/4c8772a5b3538a94399233d45337cad5.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1144014Z img/original/4cecf48f476f4a22948811556806041a.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1147976Z img/original/52b8bfed7f1c19062ae19c5a48e8c932.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1152905Z img/original/66be339a42c4e15ab5b2f32a93e821e0.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1157865Z img/original/6ea691b1a938acf1265ab0f6ed34c4f0.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1169636Z img/original/95ad7d43287adbbb0811160d6cf702c3.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1178622Z img/original/9d7da18ea30ecd033456ab10dcb29768.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1183504Z img/original/9dc421cd31afe6dcfdccf8b2044d3fa9.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1188105Z img/original/c72139febef1db4a95832aa08bb566af.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1193941Z img/original/e0ba663e054501f887a86a069fbb067d.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1200019Z img/original/e82cf91f655b813bd450cee8ed9874c0.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1207687Z img/original/fcdfcb44f1d7dcb3f843065f8898ba24.jpg
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1212661Z js/
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1213175Z js/.gitkeep
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1213625Z js/jquery.mb.YTPlayer.min.js
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1214159Z js/slick.min.js
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1214542Z js/slick.script.js
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1214941Z js/timber.master.min01.js
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1225563Z js/tophe.js
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1634955Z 
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1635526Z sent 7,284,247 bytes  received 1,751 bytes  14,571,996.00 bytes/sec
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1636208Z total size is 7,276,055  speedup is 1.00
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1642201Z ✅ コピー完了
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1642550Z 
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1642819Z 📊 コピー後のout/ディレクトリ:
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1662242Z -rw-r--r-- 1 runner runner  981 Oct  8 12:19 out/img/btn03_close.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1663114Z -rw-r--r-- 1 runner runner  838 Oct  8 12:19 out/img/btn03_open.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1663757Z -rw-r--r-- 1 runner runner 4.7K Oct  8 12:19 out/img/icon180.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1664371Z -rw-r--r-- 1 runner runner  576 Oct  8 12:19 out/img/icon21.png
+build-and-deploy	📁 publicディレクトリの内容をoutにコピー	2025-10-08T12:19:45.1665325Z -rw-r--r-- 1 runner runner  711 Oct  8 12:19 out/img/icon22.png
+build-and-deploy	🔄 public/_monju/index.htmlを強制的にout/にコピー	﻿2025-10-08T12:19:45.1688092Z ##[group]Run echo "🔄 public/_monju/index.htmlをout/index.htmlに上書きコピー..."
+build-and-deploy	🔄 public/_monju/index.htmlを強制的にout/にコピー	2025-10-08T12:19:45.1688625Z [36;1mecho "🔄 public/_monju/index.htmlをout/index.htmlに上書きコピー..."[0m
+build-and-deploy	🔄 public/_monju/index.htmlを強制的にout/にコピー	2025-10-08T12:19:45.1689031Z [36;1mcp -f public/_monju/index.html out/index.html[0m
+build-and-deploy	🔄 public/_monju/index.htmlを強制的にout/にコピー	2025-10-08T12:19:45.1689344Z [36;1mecho "✅ index.html上書き完了"[0m
+build-and-deploy	🔄 public/_monju/index.htmlを強制的にout/にコピー	2025-10-08T12:19:45.1689591Z [36;1mecho "📊 CSS参照確認:"[0m
+build-and-deploy	🔄 public/_monju/index.htmlを強制的にout/にコピー	2025-10-08T12:19:45.1689910Z [36;1mgrep -o "slick_style0[0-9].css" out/index.html || echo "CSS参照が見つかりません"[0m
+build-and-deploy	🔄 public/_monju/index.htmlを強制的にout/にコピー	2025-10-08T12:19:45.1721530Z shell: /usr/bin/bash -e {0}
+build-and-deploy	🔄 public/_monju/index.htmlを強制的にout/にコピー	2025-10-08T12:19:45.1721770Z ##[endgroup]
+build-and-deploy	🔄 public/_monju/index.htmlを強制的にout/にコピー	2025-10-08T12:19:45.1770471Z 🔄 public/_monju/index.htmlをout/index.htmlに上書きコピー...
+build-and-deploy	🔄 public/_monju/index.htmlを強制的にout/にコピー	2025-10-08T12:19:45.1785185Z ✅ index.html上書き完了
+build-and-deploy	🔄 public/_monju/index.htmlを強制的にout/にコピー	2025-10-08T12:19:45.1785592Z 📊 CSS参照確認:
+build-and-deploy	🔄 public/_monju/index.htmlを強制的にout/にコピー	2025-10-08T12:19:45.1797639Z slick_style03.css
+build-and-deploy	📊 ビルド結果を確認	﻿2025-10-08T12:19:45.1821258Z ##[group]Run echo "📁 生成されたファイル:"
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1821564Z [36;1mecho "📁 生成されたファイル:"[0m
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1821810Z [36;1mls -la out/[0m
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1822246Z [36;1mecho ""[0m
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1822440Z [36;1mecho "📄 ブログページ確認:"[0m
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1822727Z [36;1mls -la out/blog/ 2>/dev/null || echo "ブログフォルダはまだ作成されていません"[0m
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1823027Z [36;1mecho ""[0m
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1823226Z [36;1mecho "🔍 ヒーローセクションのHTML確認:"[0m
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1823649Z [36;1mgrep -A 3 "slider_logo_container" out/index.html || echo "slider_logo_containerが見つかりません"[0m
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1852458Z shell: /usr/bin/bash -e {0}
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1852712Z ##[endgroup]
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1899257Z 📁 生成されたファイル:
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1912360Z total 136
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1912921Z drwxr-xr-x  8 runner runner  4096 Oct  8 12:19 .
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1913557Z drwxr-xr-x 10 runner runner  4096 Oct  8 12:19 ..
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1914321Z -rw-r--r--  1 runner runner  1411 Oct  8 12:19 .htaccess
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1915130Z drwxr-xr-x  2 runner runner  4096 Oct  8 12:19 404
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1915811Z -rw-r--r--  1 runner runner  6177 Oct  8 12:19 404.html
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1916284Z drwxr-xr-x  4 runner runner  4096 Oct  8 12:19 _monju
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1916733Z drwxr-xr-x  4 runner runner  4096 Oct  8 12:19 _next
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1917170Z drwxr-xr-x  2 runner runner  4096 Oct  8 12:19 css
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1917626Z -rw-r--r--  1 runner runner 15086 Oct  8 12:19 favicon.ico
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1918100Z -rw-r--r--  1 runner runner  4745 Oct  8 12:19 icon180.png
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1918544Z drwxr-xr-x  4 runner runner  4096 Oct  8 12:19 img
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1918983Z -rw-r--r--  1 runner runner 30978 Oct  8 12:19 index.html
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1919480Z -rw-r--r--  1 runner runner 33014 Oct  8 12:19 index.txt
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1919941Z drwxr-xr-x  2 runner runner  4096 Oct  8 12:19 js
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1920201Z 
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1920394Z 📄 ブログページ確認:
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1927334Z ブログフォルダはまだ作成されていません
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1927632Z 
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1927927Z 🔍 ヒーローセクションのHTML確認:
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1939560Z <div class="slider_logo_container" data-animate-in="preset:scaleOut;duration:10000ms;" data-threshold="0.3">
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1940759Z <img src="img/logo_wht08_new.png" alt="" >
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1941667Z <div class="company-name">現長株式会社</div>
+build-and-deploy	📊 ビルド結果を確認	2025-10-08T12:19:45.1942428Z </div>
+build-and-deploy	🚀 本番サーバーへデプロイ	﻿2025-10-08T12:19:45.2015188Z ##[group]Run SamKirkland/FTP-Deploy-Action@v4.3.4
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:45.2015536Z with:
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:45.2015830Z   server: ***
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:45.2016036Z   username: ***
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:45.2016251Z   password: ***
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:45.2016448Z   local-dir: ./out/
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:45.2016661Z   server-dir: /public_html/gencho.site/
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:45.2017000Z   exclude: **/.git*
+build-and-deploy	🚀 本番サーバーへデプロイ	**/.git*/**
+build-and-deploy	🚀 本番サーバーへデプロイ	**/node_modules/**
+build-and-deploy	🚀 本番サーバーへデプロイ	**/.DS_Store
+build-and-deploy	🚀 本番サーバーへデプロイ	**/Thumbs.db
+build-and-deploy	🚀 本番サーバーへデプロイ	cms/**
+build-and-deploy	🚀 本番サーバーへデプロイ	
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:45.2017327Z ##[endgroup]
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:45.2436876Z ----------------------------------------------------------------
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:45.2441348Z 🚀 Thanks for using ftp-deploy. Let's deploy some stuff!   
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:45.2442196Z ----------------------------------------------------------------
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:45.2443052Z If you found this project helpful, please support it
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:45.2443775Z by giving it a ⭐ on Github --> https://github.com/SamKirkland/FTP-Deploy-Action
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:45.2444680Z or add a badge 🏷️ to your projects readme --> https://github.com/SamKirkland/FTP-Deploy-Action#badge
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.5895303Z ----------------------------------------------------------------
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6032892Z Last published on 📅 Wednesday, October 8, 2025 at 11:29 AM
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6065992Z ----------------------------------------------------------------
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6099784Z Local Files:	120
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6100235Z Server Files:	120
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6100808Z ----------------------------------------------------------------
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6102583Z Calculating differences between client & server
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6103312Z ----------------------------------------------------------------
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6114577Z 📁 Create: _next/7zo14Y8lhjYDDQlDJ9x3-
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6115412Z 📁 Create: _next/static/7zo14Y8lhjYDDQlDJ9x3-
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6116303Z 📄 Upload: _next/static/7zo14Y8lhjYDDQlDJ9x3-/_buildManifest.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6117297Z 📄 Upload: _next/static/7zo14Y8lhjYDDQlDJ9x3-/_ssgManifest.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6118116Z 🔁 File replace: _monju/index.html
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6118703Z 🔁 File replace: 404.html
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6119268Z 🔁 File replace: 404/index.html
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6119901Z 🔁 File replace: css/slick_style03.css
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6120481Z 🔁 File replace: index.html
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6120995Z 🔁 File replace: index.txt
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6121601Z 📁 Delete: _next/LbS92Xs0TR0523XX7pdYb    
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6122583Z 📁 Delete: _next/static/LbS92Xs0TR0523XX7pdYb    
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6123521Z ⚖️  File content is the same, doing nothing: _monju/index_gencho.html
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6124661Z ⚖️  File content is the same, doing nothing: _monju/index.html.backup.20251003_203219
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6125938Z ⚖️  File content is the same, doing nothing: _monju/index.html.backup.20251007_135854
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6127183Z ⚖️  File content is the same, doing nothing: _next/static/chunks/117-44e863620db02712.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6128551Z ⚖️  File content is the same, doing nothing: _next/static/chunks/app/_not-found/page-eaa53ae320539b27.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6129950Z ⚖️  File content is the same, doing nothing: _next/static/chunks/app/layout-c54d42dbfd504823.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6131245Z ⚖️  File content is the same, doing nothing: _next/static/chunks/app/page-0619e73f7895cdcd.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6132768Z ⚖️  File content is the same, doing nothing: _next/static/chunks/fd9d1056-749e5812300142af.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6134079Z ⚖️  File content is the same, doing nothing: _next/static/chunks/framework-f66176bb897dc684.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6135626Z ⚖️  File content is the same, doing nothing: _next/static/chunks/main-app-385af72fb34261b0.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6136906Z ⚖️  File content is the same, doing nothing: _next/static/chunks/main-bde5f596696c1b24.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6138282Z ⚖️  File content is the same, doing nothing: _next/static/chunks/pages/_app-72b849fbd24ac258.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6139695Z ⚖️  File content is the same, doing nothing: _next/static/chunks/pages/_error-7ba65e1336b92748.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6141567Z ⚖️  File content is the same, doing nothing: _next/static/chunks/polyfills-42372ed130431b0a.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6142824Z ⚖️  File content is the same, doing nothing: _next/static/chunks/webpack-100b9e646d9c912e.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6143399Z ⚖️  File content is the same, doing nothing: .htaccess
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6143892Z ⚖️  File content is the same, doing nothing: css/core.min.css
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6144384Z ⚖️  File content is the same, doing nothing: css/layerBoard.css
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6144900Z ⚖️  File content is the same, doing nothing: css/slick_style01.css
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6145400Z ⚖️  File content is the same, doing nothing: css/slick_style02.css
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6146114Z ⚖️  File content is the same, doing nothing: css/slick-theme01.css
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6146585Z ⚖️  File content is the same, doing nothing: css/slick01.css
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6147032Z ⚖️  File content is the same, doing nothing: css/style.css
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6147482Z ⚖️  File content is the same, doing nothing: favicon.ico
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6147912Z ⚖️  File content is the same, doing nothing: icon180.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6148381Z ⚖️  File content is the same, doing nothing: img/00back12_sp01.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6148863Z ⚖️  File content is the same, doing nothing: img/00back21.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6149332Z ⚖️  File content is the same, doing nothing: img/00slider01.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6149804Z ⚖️  File content is the same, doing nothing: img/00slider02.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6150265Z ⚖️  File content is the same, doing nothing: img/00slider03.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6150719Z ⚖️  File content is the same, doing nothing: img/00slider04.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6151190Z ⚖️  File content is the same, doing nothing: img/00slider05.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6151659Z ⚖️  File content is the same, doing nothing: img/01cake01_sp.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6152445Z ⚖️  File content is the same, doing nothing: img/01cake01.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6152936Z ⚖️  File content is the same, doing nothing: img/btn_sns01.gif
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6153402Z ⚖️  File content is the same, doing nothing: img/btn_sns02.gif
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6153874Z ⚖️  File content is the same, doing nothing: img/btn03_close.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6154348Z ⚖️  File content is the same, doing nothing: img/btn03_open.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6154809Z ⚖️  File content is the same, doing nothing: img/favicon.ico
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6155261Z ⚖️  File content is the same, doing nothing: img/icon180.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6155707Z ⚖️  File content is the same, doing nothing: img/icon21.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6156149Z ⚖️  File content is the same, doing nothing: img/icon22.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6156589Z ⚖️  File content is the same, doing nothing: img/icon24.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6157045Z ⚖️  File content is the same, doing nothing: img/icon25.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6157481Z ⚖️  File content is the same, doing nothing: img/icon26.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6157919Z ⚖️  File content is the same, doing nothing: img/icon27.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6158359Z ⚖️  File content is the same, doing nothing: img/icon28.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6158791Z ⚖️  File content is the same, doing nothing: img/icon29.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6159237Z ⚖️  File content is the same, doing nothing: img/icon30.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6159670Z ⚖️  File content is the same, doing nothing: img/icon31.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6160112Z ⚖️  File content is the same, doing nothing: img/icon32.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6160544Z ⚖️  File content is the same, doing nothing: img/icon33.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6160978Z ⚖️  File content is the same, doing nothing: img/icon35.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6161442Z ⚖️  File content is the same, doing nothing: img/icon36.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6162144Z ⚖️  File content is the same, doing nothing: img/logo_blk03_new.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6162662Z ⚖️  File content is the same, doing nothing: img/logo_blk03.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6163159Z ⚖️  File content is the same, doing nothing: img/logo_menu01_new.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6163843Z ⚖️  File content is the same, doing nothing: img/logo_menu01.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6164335Z ⚖️  File content is the same, doing nothing: img/logo_wht08_new.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6164808Z ⚖️  File content is the same, doing nothing: img/logo_wht08.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6165529Z ⚖️  File content is the same, doing nothing: img/logo/9f5ea47e-6804-45d3-b67c-8d7f086ad0c6 (1)_transparent.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6166289Z ⚖️  File content is the same, doing nothing: img/original/12cb2ba539fdff1f9fcef380d736ef79.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6166988Z ⚖️  File content is the same, doing nothing: img/original/1e5bd33cfea2ba7b16b640a0b058a08b.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6167671Z ⚖️  File content is the same, doing nothing: img/original/396989221601a8d0d5bdaa186c51d451.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6168477Z ⚖️  File content is the same, doing nothing: img/original/3c451c263d9ddfd9cd44923161401cb5.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6169150Z ⚖️  File content is the same, doing nothing: img/original/493ab989a93aa43cc759b61534d2b6ba.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6169829Z ⚖️  File content is the same, doing nothing: img/original/4c8772a5b3538a94399233d45337cad5.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6170491Z ⚖️  File content is the same, doing nothing: img/original/4cecf48f476f4a22948811556806041a.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6171169Z ⚖️  File content is the same, doing nothing: img/original/52b8bfed7f1c19062ae19c5a48e8c932.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6171849Z ⚖️  File content is the same, doing nothing: img/original/66be339a42c4e15ab5b2f32a93e821e0.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6172654Z ⚖️  File content is the same, doing nothing: img/original/6ea691b1a938acf1265ab0f6ed34c4f0.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6173338Z ⚖️  File content is the same, doing nothing: img/original/95ad7d43287adbbb0811160d6cf702c3.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6174027Z ⚖️  File content is the same, doing nothing: img/original/9d7da18ea30ecd033456ab10dcb29768.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6174712Z ⚖️  File content is the same, doing nothing: img/original/9dc421cd31afe6dcfdccf8b2044d3fa9.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6175409Z ⚖️  File content is the same, doing nothing: img/original/c72139febef1db4a95832aa08bb566af.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6176098Z ⚖️  File content is the same, doing nothing: img/original/e0ba663e054501f887a86a069fbb067d.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6176786Z ⚖️  File content is the same, doing nothing: img/original/e82cf91f655b813bd450cee8ed9874c0.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6177468Z ⚖️  File content is the same, doing nothing: img/original/fcdfcb44f1d7dcb3f843065f8898ba24.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6178025Z ⚖️  File content is the same, doing nothing: img/sp_btn01.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6178483Z ⚖️  File content is the same, doing nothing: img/sp_btn02.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6178938Z ⚖️  File content is the same, doing nothing: img/space01.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6179401Z ⚖️  File content is the same, doing nothing: img/top01_sp.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6179852Z ⚖️  File content is the same, doing nothing: img/top01.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6180299Z ⚖️  File content is the same, doing nothing: img/top02_sp.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6180748Z ⚖️  File content is the same, doing nothing: img/top02.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6181193Z ⚖️  File content is the same, doing nothing: img/top03_sp.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6181635Z ⚖️  File content is the same, doing nothing: img/top03.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6182181Z ⚖️  File content is the same, doing nothing: img/top04_sp.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6182625Z ⚖️  File content is the same, doing nothing: img/top04.jpg
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6183072Z ⚖️  File content is the same, doing nothing: img/trip2025.png
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6183587Z ⚖️  File content is the same, doing nothing: js/jquery.mb.YTPlayer.min.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6184085Z ⚖️  File content is the same, doing nothing: js/slick.min.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6184684Z ⚖️  File content is the same, doing nothing: js/slick.script.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6185193Z ⚖️  File content is the same, doing nothing: js/timber.master.min01.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6185670Z ⚖️  File content is the same, doing nothing: js/tophe.js
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6186185Z ----------------------------------------------------------------
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6186584Z Making changes to 12 files/folders to sync server state
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6186992Z Uploading: 304 B -- Deleting: 304 B -- Replacing: 109 kB
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6187392Z ----------------------------------------------------------------
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:48.6187766Z creating folder "_next/7zo14Y8lhjYDDQlDJ9x3-/"
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:49.5011823Z creating folder "_next/static/7zo14Y8lhjYDDQlDJ9x3-/"
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:50.8327303Z uploading "_next/static/7zo14Y8lhjYDDQlDJ9x3-/_buildManifest.js"
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:51.4317292Z uploading "_next/static/7zo14Y8lhjYDDQlDJ9x3-/_ssgManifest.js"
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:52.0490434Z replacing "_monju/index.html"
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:52.8210297Z replacing "404.html"
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:53.4357951Z replacing "404/index.html"
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:54.0306482Z replacing "css/slick_style03.css"
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:54.6270023Z replacing "index.html"
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:55.3951330Z replacing "index.txt"
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:56.1679127Z removing folder "//public_html/gencho.site/_next/LbS92Xs0TR0523XX7pdYb"
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:57.3558491Z removing folder "//public_html/gencho.site/_next/static/LbS92Xs0TR0523XX7pdYb"
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:58.8376415Z ----------------------------------------------------------------
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:58.8378043Z 🎉 Sync complete. Saving current server state to "/public_html/gencho.site/.ftp-deploy-sync-state.json"
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:59.5791217Z ----------------------------------------------------------------
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:59.5794672Z Time spent hashing: 60 milliseconds
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:59.5796119Z Time spent connecting to server: 1.9 seconds
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:59.5796817Z Time spent deploying: 10.9 seconds (9.98 kB/second)
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:59.5797558Z   - changing dirs: 2.2 seconds
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:59.5798207Z   - logging: 7 milliseconds
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:59.5800230Z ----------------------------------------------------------------
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:59.5800881Z Total time: 14.3 seconds
+build-and-deploy	🚀 本番サーバーへデプロイ	2025-10-08T12:19:59.5801355Z ----------------------------------------------------------------
+build-and-deploy	✅ デプロイ完了通知	﻿2025-10-08T12:19:59.7836764Z ##[group]Run echo "🎉 デプロイが正常に完了しました！"
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7837115Z [36;1mecho "🎉 デプロイが正常に完了しました！"[0m
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7837411Z [36;1mecho "🌐 サイトURL: https://gencho.site"[0m
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7837703Z [36;1mecho ""[0m
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7837901Z [36;1mecho "📝 デプロイ情報:"[0m
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7838136Z [36;1mecho "- トリガー: push"[0m
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7838398Z [36;1mif [ "push" == "repository_dispatch" ]; then[0m
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7838704Z [36;1m  echo "- WordPressアクション: "[0m
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7838956Z [36;1m  echo "- 記事タイトル: "[0m
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7839159Z [36;1mfi[0m
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7839401Z [36;1mif [ "push" == "workflow_dispatch" ]; then[0m
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7839669Z [36;1m  echo "- 理由: "[0m
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7839864Z [36;1mfi[0m
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7871746Z shell: /usr/bin/bash -e {0}
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7872115Z ##[endgroup]
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7922784Z 🎉 デプロイが正常に完了しました！
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7923349Z 🌐 サイトURL: https://gencho.site
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7923629Z 
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7923870Z 📝 デプロイ情報:
+build-and-deploy	✅ デプロイ完了通知	2025-10-08T12:19:59.7924219Z - トリガー: push
+build-and-deploy	Post 📦 Node.jsをセットアップ	﻿2025-10-08T12:19:59.7967886Z Post job cleanup.
+build-and-deploy	Post 📦 Node.jsをセットアップ	2025-10-08T12:19:59.9482549Z Cache hit occurred on the primary key node-cache-Linux-x64-npm-cf519dab10a5fcd0df7da9ef77a534e0d4becc020815a167f4adf4a66672deaf, not saving cache.
+build-and-deploy	Post 📥 リポジトリをチェックアウト	﻿2025-10-08T12:19:59.9595890Z Post job cleanup.
+build-and-deploy	Post 📥 リポジトリをチェックアウト	2025-10-08T12:20:00.0531156Z [command]/usr/bin/git version
+build-and-deploy	Post 📥 リポジトリをチェックアウト	2025-10-08T12:20:00.0567358Z git version 2.51.0
+build-and-deploy	Post 📥 リポジトリをチェックアウト	2025-10-08T12:20:00.0611159Z Temporarily overriding HOME='/home/runner/work/_temp/ee0c4a16-1a68-4c40-811d-1415b7217821' before making global git config changes
+build-and-deploy	Post 📥 リポジトリをチェックアウト	2025-10-08T12:20:00.0612570Z Adding repository directory to the temporary git global config as a safe directory
+build-and-deploy	Post 📥 リポジトリをチェックアウト	2025-10-08T12:20:00.0616801Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gencho-website/gencho-website
+build-and-deploy	Post 📥 リポジトリをチェックアウト	2025-10-08T12:20:00.0657367Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-deploy	Post 📥 リポジトリをチェックアウト	2025-10-08T12:20:00.0690821Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-deploy	Post 📥 リポジトリをチェックアウト	2025-10-08T12:20:00.0961436Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-deploy	Post 📥 リポジトリをチェックアウト	2025-10-08T12:20:00.0982037Z http.https://github.com/.extraheader
+build-and-deploy	Post 📥 リポジトリをチェックアウト	2025-10-08T12:20:00.0995049Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build-and-deploy	Post 📥 リポジトリをチェックアウト	2025-10-08T12:20:00.1026403Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-deploy	Complete job	﻿2025-10-08T12:20:00.1343450Z Cleaning up orphan processes
