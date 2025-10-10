@@ -28,32 +28,43 @@
 <style>
 /* Company info table styles */
 .company-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 40px 0;
-    background: #fff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 40px 0 !important;
+    background: #fff !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+    display: table !important;
+}
+
+.company-table tbody {
+    display: table-row-group !important;
+}
+
+.company-table tr {
+    display: table-row !important;
 }
 
 .company-table th,
 .company-table td {
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    text-align: left;
-    font-family: 'Noto Serif JP', serif;
+    padding: 20px !important;
+    border: 1px solid #e0e0e0 !important;
+    text-align: left !important;
+    font-family: 'Noto Serif JP', serif !important;
+    display: table-cell !important;
+    color: #333 !important;
 }
 
 .company-table th {
-    background: #f8f8f8;
-    font-weight: bold;
-    width: 30%;
-    color: #333;
-    border-right: 3px solid #58980b;
+    background: #f8f8f8 !important;
+    font-weight: bold !important;
+    width: 30% !important;
+    border-right: 3px solid #58980b !important;
 }
 
 .company-table td {
-    width: 70%;
-    line-height: 1.8;
+    width: 70% !important;
+    line-height: 1.8 !important;
+    background: #fff !important;
 }
 
 @media (max-width: 768px) {
