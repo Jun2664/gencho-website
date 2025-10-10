@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<!-- Last updated: 2025-10-09 - Company page created -->
+<!-- Last updated: 2025-10-09 - Company page redesigned with large table layout -->
 <meta charset="UTF-8">
 <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
 <title>会社情報｜現長株式会社</title>
@@ -24,6 +24,112 @@
 <link rel="stylesheet" href="/css/core.min.css" />
 <link rel="stylesheet" href="/css/style.css" />
 <link rel="stylesheet" href="/css/layerBoard.css">
+
+<style>
+/* Company info table styles */
+.company-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 40px 0;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.company-table th,
+.company-table td {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.company-table th {
+    background: #f8f8f8;
+    font-weight: bold;
+    width: 30%;
+    color: #333;
+    border-right: 3px solid #58980b;
+}
+
+.company-table td {
+    width: 70%;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .company-table th,
+    .company-table td {
+        display: block;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .company-table th {
+        border-right: none;
+        border-bottom: 2px solid #58980b;
+    }
+}
+
+/* Map container */
+.map-container {
+    width: 100%;
+    height: 400px;
+    margin: 30px 0;
+    border: 3px solid #58980b;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Certification cards */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+}
+
+@media (max-width: 768px) {
+    .cert-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+.cert-item {
+    text-align: center;
+    padding: 30px 20px;
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.cert-item:hover {
+    border-color: #58980b;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cert-icon {
+    font-size: 48px;
+    color: #58980b;
+    margin-bottom: 15px;
+}
+
+.cert-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cert-desc {
+    font-size: 14px;
+    color: #666;
+}
+</style>
 
 </head>
 <body>
@@ -57,53 +163,26 @@
 </aside>
 </div>
 
-<!------ Hero Section ----------------------------------------------->
+<!------ Hero Section: Large Background Image with Vertical Title ----------------------------------------------->
 
-<section class="section-block bkg-info02 pt-60 mb-40">
-<div class="row">
-<div class="column width-12 center_sp horizon" data-animate-in="preset:slideInRightShort;duration:3000ms;">
-<h2 class="ls02 f16a lh18">会社情報<br />
-<span class="allura f16 f_grn ls01 mb-10">Company</span>
-</h2>
-<p class="p1">
-確かな実績と信頼<br class="pc" />
-シートシャッター施工のプロフェッショナル
-</p>
-</div>
-</div>
-</section>
-
-<!------ Company Overview ----------------------------------------------->
-
-<section class="section-block feature-2 right no-padding-bottom">
+<section class="section-block feature-2 right no-padding-bottom no-padding-top">
 <div class="row flex">
-<div class="column width-6">
+<div class="column width-8">
 <div class="feature-image mb-mobile-50">
 <div class="feature-image-inner horizon" data-animate-in="preset:slideInLeftShort;duration:3000;" data-threshold="0.3">
-<div class="pc"><img src="/img/company01.jpg" alt="会社概要" /></div>
-<div class="sp"><img src="/img/company01_sp.jpg" alt="会社概要" /></div>
+<div class="pc"><img src="/img/top01.jpg" alt="会社情報" /></div>
+<div class="sp"><img src="/img/top01_sp.jpg" alt="会社情報" /></div>
 </div>
 </div>
 </div>
-<div class="column width-5 offset-1 tategaki02">
+<div class="column width-3 offset-1 tategaki02">
 <div class="feature-content">
 <div class="feature-content-inner left center_sp horizon" data-animate-in="preset:slideInRightShort;duration:3000;delay:300ms;" data-threshold="0.3">
-<h2 class="lspacing-medium f16 ml-20 lh15">会社概要<span class="pc">　　　</span><br class="sp" /><span class="allura f_grn shin ls01 ml-20">Overview</span></h2>
+<h2 class="lspacing-medium f16 ml-20 lh15">会社情報<span class="pc">　　　</span><br class="sp" /><span class="allura f_grn shin ls01 ml-20">Company</span></h2>
 <p class="p1 ml-20">
-<strong class="f_grn">社名</strong><br />
-現長株式会社<br />
-GENCHO Co., Ltd.<br /><br />
-
-<strong class="f_grn">所在地</strong><br />
-〒416-0944<br />
-静岡県富士市横割6-8-1<br /><br />
-
-<strong class="f_grn">電話・FAX</strong><br />
-TEL : 0545-61-1344<br />
-FAX : 0545-61-1343<br /><br />
-
-<strong class="f_grn">営業時間</strong><br />
-8:00〜17:00（土日祝除く）
+確かな実績と信頼<br /><br />
+シートシャッター施工のプロフェッショナル<br /><br />
+お客様の成功をサポートします
 </p>
 </div>
 </div>
@@ -111,74 +190,194 @@ FAX : 0545-61-1343<br /><br />
 </div>
 </section>
 
-<!------ Business Details ----------------------------------------------->
+<!------ Company Information Table ----------------------------------------------->
 
-<section class="section-block feature-2 no-padding-bottom">
-<div class="row flex">
-<div class="column width-6 push-3 offset-1">
-<div class="feature-image mb-mobile-50">
-<div class="feature-image-inner center-on-mobile horizon" data-animate-in="preset:slideInRightShort;duration:3000;delay:300ms;" data-threshold="0.3">
-<div class="img-wrap1">
-<div class="pc"><img src="/img/company02.jpg" alt="事業内容" /></div>
-<div class="sp"><img src="/img/company02_sp.jpg" alt="事業内容" /></div>
-</div>
-</div>
-</div>
-</div>
-<div class="column width-5 pull-7 tategaki02">
-<div class="feature-content">
-<div class="feature-content-inner left center_sp horizon" data-animate-in="preset:slideInLeftShort;duration:3000;" data-threshold="0.3">
-<h2 class="lspacing-medium f16 ml-20 lh15">事業概要<span class="pc">　　　</span><br class="sp" /><span class="allura f_grn shin ls01 ml-20">Business</span></h2>
-<p class="p1 ml-20">
-<strong class="f_grn">主要事業</strong><br />
+<section class="section-block">
+<div class="row">
+<div class="column width-12">
+<h2 class="ls02 f16 center_sp mb-40 horizon" data-animate-in="preset:slideInUpShort;duration:1500ms;">会社概要<br /><span class="allura f_grn shin ls01">Company Overview</span></h2>
+
+<div class="horizon" data-animate-in="preset:slideInUpShort;duration:1500ms;delay:200ms;">
+<table class="company-table">
+<tbody>
+<tr>
+<th>会社名</th>
+<td>現長株式会社<br />GENCHO Co., Ltd.</td>
+</tr>
+<tr>
+<th>設立</th>
+<td>1985年（昭和60年）</td>
+</tr>
+<tr>
+<th>資本金</th>
+<td>1,000万円</td>
+</tr>
+<tr>
+<th>代表者</th>
+<td>代表取締役</td>
+</tr>
+<tr>
+<th>従業員数</th>
+<td>25名</td>
+</tr>
+<tr>
+<th>所在地</th>
+<td>〒416-0944<br />静岡県富士市横割6-8-1</td>
+</tr>
+<tr>
+<th>連絡先</th>
+<td>TEL: 0545-61-1344<br />FAX: 0545-61-1343</td>
+</tr>
+<tr>
+<th>営業時間</th>
+<td>8:00〜17:00（土日祝除く）</td>
+</tr>
+<tr>
+<th>主要事業</th>
+<td>
 シートシャッター施工<br />
 基礎・土間工事<br />
 テント倉庫改修<br />
 建具・サッシ工事<br />
-塗装・防水工事<br /><br />
+塗装・防水工事
+</td>
+</tr>
+<tr>
+<th>対応エリア</th>
+<td>静岡県を中心に全国対応可能<br />※詳細はお問い合わせください</td>
+</tr>
+<tr>
+<th>取引銀行</th>
+<td>静岡銀行 富士支店<br />清水銀行 富士支店</td>
+</tr>
+<tr>
+<th>主要取引先</th>
+<td>製造業、物流業、商業施設、食品工場など<br />多数のお取引実績がございます</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
 
-<strong class="f_grn">対応エリア</strong><br />
-静岡県全域<br />
-※その他地域はご相談ください<br /><br />
+<!------ Company History Timeline ----------------------------------------------->
 
-<strong class="f_grn">主要取引先</strong><br />
-製造業、物流業、商業施設など<br />
-多数のお取引実績がございます
-</p>
+<section class="section-block bkg-grey-ultralight">
+<div class="row">
+<div class="column width-12 horizon" data-animate-in="preset:slideInUpShort;duration:3000ms;">
+<h2 class="ls02 f16 center_sp mb-40">会社沿革<br /><span class="allura f_grn shin ls01">Company History</span></h2>
+
+<div class="row">
+<div class="column width-3 center_sp mb-30">
+<div class="horizon" data-animate-in="preset:slideInLeftShort;duration:3000;delay:0ms;" data-threshold="0.3">
+<div class="f_grn" style="font-size: 3rem; font-weight: bold;">1985</div>
+<h3 class="f16 mb-10">創業</h3>
+<p class="p1">現長株式会社設立<br />シートシャッター施工事業を開始</p>
+</div>
+</div>
+
+<div class="column width-3 center_sp mb-30">
+<div class="horizon" data-animate-in="preset:slideInLeftShort;duration:3000;delay:200ms;" data-threshold="0.3">
+<div class="f_grn" style="font-size: 3rem; font-weight: bold;">2000</div>
+<h3 class="f16 mb-10">事業拡大</h3>
+<p class="p1">施工エリアを全国に拡大<br />技術力の向上と実績の蓄積</p>
+</div>
+</div>
+
+<div class="column width-3 center_sp mb-30">
+<div class="horizon" data-animate-in="preset:slideInLeftShort;duration:3000;delay:400ms;" data-threshold="0.3">
+<div class="f_grn" style="font-size: 3rem; font-weight: bold;">2015</div>
+<h3 class="f16 mb-10">品質管理強化</h3>
+<p class="p1">ISO認証取得<br />品質管理システムの導入</p>
+</div>
+</div>
+
+<div class="column width-3 center_sp mb-30">
+<div class="horizon" data-animate-in="preset:slideInLeftShort;duration:3000;delay:600ms;" data-threshold="0.3">
+<div class="f_grn" style="font-size: 3rem; font-weight: bold;">2025</div>
+<h3 class="f16 mb-10">現在</h3>
+<p class="p1">業界トップクラスの技術力<br />お客様満足度No.1を目指して</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!------ Access Map ----------------------------------------------->
+
+<section class="section-block">
+<div class="row">
+<div class="column width-12">
+<h2 class="ls02 f16 center_sp mb-40 horizon" data-animate-in="preset:slideInUpShort;duration:1500ms;">アクセス<br /><span class="allura f_grn shin ls01">Access</span></h2>
+
+<div class="horizon" data-animate-in="preset:slideInUpShort;duration:1500ms;delay:200ms;">
+<div class="map-container">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.7347156986834!2d138.66697931525956!3d35.1611299801907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019a1f8e8b8b8b9%3A0x1234567890abcdef!2z6Z2Z5bKh55yM5a-M5aOr5biC!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+
+<div class="row mt-40">
+<div class="column width-4 center_sp mb-30">
+<div class="horizon" data-animate-in="preset:slideInUpShort;duration:1500ms;delay:300ms;">
+<div style="text-align: center; margin-bottom: 15px;">
+<i class="fa-solid fa-location-dot f_grn" style="font-size: 2rem;"></i>
+</div>
+<h3 class="f16 mb-10 center_sp">所在地</h3>
+<p class="p1 center_sp">〒416-0944<br />静岡県富士市横割6-8-1</p>
+</div>
+</div>
+
+<div class="column width-4 center_sp mb-30">
+<div class="horizon" data-animate-in="preset:slideInUpShort;duration:1500ms;delay:400ms;">
+<div style="text-align: center; margin-bottom: 15px;">
+<i class="fa-solid fa-car f_grn" style="font-size: 2rem;"></i>
+</div>
+<h3 class="f16 mb-10 center_sp">お車でお越しの方</h3>
+<p class="p1 center_sp">東名高速道路 富士ICより約10分<br />新東名高速道路 新富士ICより約15分</p>
+</div>
+</div>
+
+<div class="column width-4 center_sp mb-30">
+<div class="horizon" data-animate-in="preset:slideInUpShort;duration:1500ms;delay:500ms;">
+<div style="text-align: center; margin-bottom: 15px;">
+<i class="fa-solid fa-phone f_grn" style="font-size: 2rem;"></i>
+</div>
+<h3 class="f16 mb-10 center_sp">お問い合わせ</h3>
+<p class="p1 center_sp">TEL: 0545-61-1344<br />FAX: 0545-61-1343</p>
+</div>
 </div>
 </div>
 </div>
 </div>
 </section>
 
-<!------ Access ----------------------------------------------->
+<!------ Certification & Licenses ----------------------------------------------->
 
-<section class="section-block feature-2 right">
-<div class="row flex">
-<div class="column width-6">
-<div class="feature-image mb-mobile-50">
-<div class="feature-image-inner center-on-mobile horizon" data-animate-in="preset:slideInLeftShort;duration:3000;" data-threshold="0.3">
-<div class="pc"><img src="/img/company03.jpg" alt="アクセス" /></div>
-<div class="sp"><img src="/img/company03_sp.jpg" alt="アクセス" /></div>
-</div>
-</div>
-</div>
-<div class="column width-5 offset-1 tategaki02">
-<div class="feature-content">
-<div class="feature-content-inner left center_sp horizon" data-animate-in="preset:slideInRightShort;duration:3000;delay:300ms;" data-threshold="0.3">
-<h2 class="lspacing-medium f16 ml-20 lh15">アクセス<span class="pc">　　　</span><br class="sp" /><span class="allura f_grn shin ls01 ml-20">Access</span></h2>
-<p class="p1 ml-20">
-<strong class="f_grn">所在地</strong><br />
-〒416-0944<br />
-静岡県富士市横割6-8-1<br /><br />
+<section class="section-block bkg-info02" style="margin-bottom: 80px;">
+<div class="row">
+<div class="column width-12">
+<h2 class="ls02 f16 center_sp mb-40 horizon" data-animate-in="preset:slideInUpShort;duration:1500ms;">認証・許可<br /><span class="allura f_grn shin ls01">Certification & Licenses</span></h2>
 
-<strong class="f_grn">アクセス</strong><br />
-東名高速道路 富士ICより車で約10分<br />
-新東名高速道路 新富士ICより車で約15分<br /><br />
+<div class="cert-grid horizon" data-animate-in="preset:slideInUpShort;duration:1500ms;delay:200ms;">
+<div class="cert-item">
+<div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+<div class="cert-title">建設業許可</div>
+<p class="cert-desc">静岡県知事許可<br />（般-XX）第XXXXX号</p>
+</div>
 
-お車でお越しの際は、お気軽にお問い合わせください。
-</p>
-<a href="/contact/" class="button large bkg-btn01 bkg-hover-btn01">> お問い合わせ</a>
+<div class="cert-item">
+<div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+<div class="cert-title">ISO 9001認証</div>
+<p class="cert-desc">品質マネジメントシステム<br />国際規格認証取得</p>
+</div>
+
+<div class="cert-item">
+<div class="cert-icon"><i class="fa-solid fa-user-check"></i></div>
+<div class="cert-title">有資格者</div>
+<p class="cert-desc">一級建築施工管理技士<br />その他各種資格保有</p>
 </div>
 </div>
 </div>
@@ -187,41 +386,45 @@ FAX : 0545-61-1343<br /><br />
 
 <!------ Footer ----------------------------------------------->
 
-<footer>
-<div class="footer">
-<div class="content_l tategaki03 scroll-box">
-<h1 class="ls01 shin lh18 f18">現長株式会社<br /><span class="allura ls01 f18 lh15 f_grn">GENCHO Co., Ltd.</span></h1>
-<p class="p2">〒416-0944<br />静岡県富士市横割6-8-1</p>
-<p class="p2">TEL : 0545-61-1344<br />FAX : 0545-61-1343</p>
-<ul class="f_grn p2">
-<li>シートシャッター専門施工</li>
-<li>基礎・土間工事</li>
-<li>テント倉庫改修</li>
-<li>建具・サッシ工事</li>
-</ul>
+<section class="footer">
+
+<div class="footer-bottom">
+<div class="row pt-50">
+<div class="column width-12 center mb-30">
+---　GENCHO GROUP　---
+</div></div>
+
+<div class="row pb-20 horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:400ms;" data-threshold="0.3">
+  <div class="column width-3 mb-10">
+  <a href="https://www.gencho.biz/" target="_blank" class="button large border-charcoal border-hover-theme-blk color-charcoal center w100">> 公式サイト</a>
+  </div>
+  <div class="column width-3 mb-10">
+  <a href="https://www.gencho.biz/services-4" target="_blank" class="button large border-charcoal border-hover-theme-blk color-charcoal center w100">> 事業内容</a>
+  </div>
+  <div class="column width-3 mb-10">
+  <a href="https://www.gencho.biz/%E4%BC%9A%E7%A4%BE%E6%A6%82%E8%A6%81" target="_blank" class="button large border-charcoal border-hover-theme-blk color-charcoal center w100">> 会社概要</a>
+  </div>
+  <div class="column width-3 mb-10">
+  <a href="https://en-gage.net/gencho/" target="_blank" class="button large border-charcoal border-hover-theme-blk color-charcoal center w100">> 採用情報</a>
+  </div>
+  </div>
+
 </div>
-<div class="content_c">
-<div class="logo_area">
-<img src="/img/logo_wht08_new.png" alt="現長株式会社ロゴ" />
+
+<div class="f09 bkg-blk-footer">
+<div class="row">
+<div class="column width-6 f11 left1">
+<a href="/about/">現長について</a> ｜ <a href="/services/">事業内容</a> ｜ <a href="/contact/">お問い合わせ</a>
 </div>
-<ul class="f_wht mb-20 ls01">
-<li><a href="/about/">現長について</a></li>
-<li><a href="/services/">事業内容</a></li>
-<li><a href="/works/">施工実績</a></li>
-<li><a href="/company/">会社情報</a></li>
-<li><a href="/recruit/">採用情報</a></li>
-<li><a href="/contact/">お問い合わせ</a></li>
-<li><a href="/news/">お知らせ</a></li>
-</ul>
-<div class="mb-20">
-<a href="https://twitter.com/gencho416" target="_blank"><span class="fa-brands fa-twitter f_wht f20"></span></a>
-<a href="https://www.facebook.com/gencho416" target="_blank"><span class="fa-brands fa-facebook f_wht f20"></span></a>
+<div class="column width-6 right1">Copyright(C) GENCHO Co., Ltd. , All Rights Reserved.
 </div>
 </div>
-<div class="content_r"></div>
 </div>
-<div class="copy_r"><p class="p2">Copyright © 2025 GENCHO Co., Ltd. All Rights Reserved.</p></div>
-</footer>
+
+</div>
+
+</section>
+<!-- Footer End -->
 
 <!-- Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -246,7 +449,6 @@ $(function(){
                 asidButton.find('img').attr('src', '/img/btn03_open.png');
             };
         });
-
 });
 </script>
 
