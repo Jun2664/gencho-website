@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<!-- Last updated: 2025-10-09 - Services page created -->
+<!-- Last updated: 2025-10-09 - Services page redesigned with large vertical layout -->
 <meta charset="UTF-8">
 <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
 <title>事業内容｜現長株式会社</title>
@@ -24,6 +24,155 @@
 <link rel="stylesheet" href="/css/core.min.css" />
 <link rel="stylesheet" href="/css/style.css" />
 <link rel="stylesheet" href="/css/layerBoard.css">
+
+<style>
+/* Service features styles */
+.service-features {
+    display: flex;
+    gap: 20px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.service-feature-item {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-left: 4px solid #58980b;
+}
+
+.service-feature-item h4 {
+    color: #58980b;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.service-stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.service-stat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-stat i {
+    color: #58980b;
+    font-size: 20px;
+}
+
+/* Timeline styles */
+.service-flow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.flow-step {
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    position: relative;
+}
+
+.flow-step-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #58980b;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto 15px;
+}
+
+.flow-step-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.flow-step-desc {
+    font-size: 14px;
+    color: #666;
+}
+
+.flow-step:not(:last-child)::after {
+    content: '→';
+    position: absolute;
+    right: -15px;
+    top: 25px;
+    color: #58980b;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .flow-step:not(:last-child)::after {
+        content: '↓';
+        right: auto;
+        top: auto;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .service-flow {
+        flex-direction: column;
+    }
+}
+
+/* Industry icons grid */
+.industry-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+}
+
+@media (max-width: 768px) {
+    .industry-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+.industry-item {
+    text-align: center;
+    padding: 30px 20px;
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.industry-item:hover {
+    border-color: #58980b;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.industry-icon {
+    font-size: 48px;
+    color: #58980b;
+    margin-bottom: 15px;
+}
+
+.industry-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+</style>
 
 </head>
 <body>
@@ -57,35 +206,46 @@
 </aside>
 </div>
 
-<!------ Hero Section ----------------------------------------------->
+<!------ Hero Section: Large Background Image with Vertical Title ----------------------------------------------->
 
-<section class="section-block bkg-info02 pt-60 mb-40">
-<div class="row">
-<div class="column width-12 center_sp horizon" data-animate-in="preset:slideInRightShort;duration:3000ms;">
-<h2 class="ls02 f16a lh18">事業内容<br />
-<span class="allura f16 f_grn ls01 mb-10">Services</span>
-</h2>
-<p class="p1">
-確かな技術で多様なニーズに対応<br class="pc" />
-幅広い建築サービスをワンストップで提供
+<section class="section-block feature-2 right no-padding-bottom no-padding-top">
+<div class="row flex">
+<div class="column width-8">
+<div class="feature-image mb-mobile-50">
+<div class="feature-image-inner horizon" data-animate-in="preset:slideInLeftShort;duration:3000;" data-threshold="0.3">
+<div class="pc"><img src="/img/top01.jpg" alt="事業内容" /></div>
+<div class="sp"><img src="/img/top01_sp.jpg" alt="事業内容" /></div>
+</div>
+</div>
+</div>
+<div class="column width-3 offset-1 tategaki02">
+<div class="feature-content">
+<div class="feature-content-inner left center_sp horizon" data-animate-in="preset:slideInRightShort;duration:3000;delay:300ms;" data-threshold="0.3">
+<h2 class="lspacing-medium f16 ml-20 lh15">事業内容<span class="pc">　　　</span><br class="sp" /><span class="allura f_grn shin ls01 ml-20">Services</span></h2>
+<p class="p1 ml-20">
+確かな技術で多様なニーズに対応<br /><br />
+幅広い建築サービスをワンストップで提供<br /><br />
+お客様の成功をサポートします
 </p>
+</div>
+</div>
 </div>
 </div>
 </section>
 
-<!------ Sheet Shutter ----------------------------------------------->
+<!------ Main Service 1: Sheet Shutter ----------------------------------------------->
 
 <section class="section-block feature-2 right no-padding-bottom">
 <div class="row flex">
-<div class="column width-6">
+<div class="column width-8">
 <div class="feature-image mb-mobile-50">
 <div class="feature-image-inner horizon" data-animate-in="preset:slideInLeftShort;duration:3000;" data-threshold="0.3">
-<div class="pc"><img src="/img/service01.jpg" alt="シートシャッター施工" /></div>
-<div class="sp"><img src="/img/service01_sp.jpg" alt="シートシャッター施工" /></div>
+<div class="pc"><img src="/img/work01.jpg" alt="シートシャッター施工" /></div>
+<div class="sp"><img src="/img/work01.jpg" alt="シートシャッター施工" /></div>
 </div>
 </div>
 </div>
-<div class="column width-5 offset-1 tategaki02">
+<div class="column width-3 offset-1 tategaki02">
 <div class="feature-content">
 <div class="feature-content-inner left center_sp horizon" data-animate-in="preset:slideInRightShort;duration:3000;delay:300ms;" data-threshold="0.3">
 <h2 class="lspacing-medium f16 ml-20 lh15">シートシャッター施工<span class="pc">　　　</span><br class="sp" /><span class="allura f_grn shin ls01 ml-20">Sheet Shutter</span></h2>
@@ -102,7 +262,44 @@
 </div>
 </section>
 
-<!------ Foundation Work ----------------------------------------------->
+<!-- Service Features: Sheet Shutter -->
+<section class="section-block bkg-grey-ultralight">
+<div class="row">
+<div class="column width-12">
+<h3 class="f16 center_sp mb-30 horizon" data-animate-in="preset:slideInUpShort;duration:1500ms;">シートシャッターの特徴</h3>
+
+<div class="service-features horizon" data-animate-in="preset:slideInUpShort;duration:1500ms;delay:200ms;">
+<div class="service-feature-item">
+<h4><i class="fa-solid fa-gauge-high"></i> 高速開閉</h4>
+<p class="p1">作業効率を大幅に向上させる高速開閉機能。開閉速度は毎秒最大2メートル。</p>
+</div>
+
+<div class="service-feature-item">
+<h4><i class="fa-solid fa-temperature-half"></i> 温度管理</h4>
+<p class="p1">外気の流入を最小限に抑え、冷暖房コストを削減。温度管理が重要な施設に最適。</p>
+</div>
+
+<div class="service-feature-item">
+<h4><i class="fa-solid fa-shield-halved"></i> 高耐久性</h4>
+<p class="p1">過酷な環境でも長期間使用可能な高耐久設計。メンテナンスサポートも万全。</p>
+</div>
+</div>
+
+<div class="service-stats horizon" data-animate-in="preset:slideInUpShort;duration:1500ms;delay:400ms;">
+<div class="service-stat">
+<i class="fa-solid fa-check-circle"></i>
+<span class="p1"><strong>対応施設:</strong> 工場 / 倉庫 / 物流センター / 商業施設</span>
+</div>
+<div class="service-stat">
+<i class="fa-solid fa-wrench"></i>
+<span class="p1"><strong>実績:</strong> 500+施工 / 40年の経験</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!------ Service 2: Foundation Work ----------------------------------------------->
 
 <section class="section-block feature-2 no-padding-bottom">
 <div class="row flex">
@@ -110,8 +307,8 @@
 <div class="feature-image mb-mobile-50">
 <div class="feature-image-inner center-on-mobile horizon" data-animate-in="preset:slideInRightShort;duration:3000;delay:300ms;" data-threshold="0.3">
 <div class="img-wrap1">
-<div class="pc"><img src="/img/service02.jpg" alt="基礎・土間工事" /></div>
-<div class="sp"><img src="/img/service02_sp.jpg" alt="基礎・土間工事" /></div>
+<div class="pc"><img src="/img/work02.jpg" alt="基礎・土間工事" /></div>
+<div class="sp"><img src="/img/work02.jpg" alt="基礎・土間工事" /></div>
 </div>
 </div>
 </div>
@@ -136,33 +333,179 @@
 </div>
 </section>
 
-<!------ Other Services ----------------------------------------------->
+<!------ Service 3: Tent Warehouse Renovation ----------------------------------------------->
 
-<section class="section-block feature-2 right">
+<section class="section-block feature-2 right no-padding-bottom">
 <div class="row flex">
 <div class="column width-6">
 <div class="feature-image mb-mobile-50">
 <div class="feature-image-inner center-on-mobile horizon" data-animate-in="preset:slideInLeftShort;duration:3000;" data-threshold="0.3">
-<div class="pc"><img src="/img/service03.jpg" alt="その他工事" /></div>
-<div class="sp"><img src="/img/service03_sp.jpg" alt="その他工事" /></div>
+<div class="pc"><img src="/img/work03.jpg" alt="テント倉庫改修" /></div>
+<div class="sp"><img src="/img/work03.jpg" alt="テント倉庫改修" /></div>
 </div>
 </div>
 </div>
 <div class="column width-5 offset-1 tategaki02">
 <div class="feature-content">
 <div class="feature-content-inner left center_sp horizon" data-animate-in="preset:slideInRightShort;duration:3000;delay:300ms;" data-threshold="0.3">
-<h2 class="lspacing-medium f16 ml-20 lh15">その他の事業<span class="pc">　　　</span><br class="sp" /><span class="allura f_grn shin ls01 ml-20">Other Services</span></h2>
+<h2 class="lspacing-medium f16 ml-20 lh15">テント倉庫改修<span class="pc">　　　</span><br class="sp" /><span class="allura f_grn shin ls01 ml-20">Tent Warehouse</span></h2>
 <p class="p1 ml-20">
-<strong class="f_grn">テント倉庫改修</strong><br />
 既存のテント倉庫の修繕や改修工事を承ります。<br /><br />
 
-<strong class="f_grn">建具・サッシ工事</strong><br />
+老朽化したテント膜の張替えから、骨組みの補強まで、幅広く対応いたします。<br /><br />
+
+迅速な施工で、お客様の業務への影響を最小限に抑えます。
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!------ Service 4: Other Services ----------------------------------------------->
+
+<section class="section-block feature-2 no-padding-bottom">
+<div class="row flex">
+<div class="column width-6 push-3 offset-1">
+<div class="feature-image mb-mobile-50">
+<div class="feature-image-inner center-on-mobile horizon" data-animate-in="preset:slideInRightShort;duration:3000;delay:300ms;" data-threshold="0.3">
+<div class="img-wrap1">
+<div class="pc"><img src="/img/top01.jpg" alt="建具・サッシ工事" /></div>
+<div class="sp"><img src="/img/top01_sp.jpg" alt="建具・サッシ工事" /></div>
+</div>
+</div>
+</div>
+</div>
+<div class="column width-5 pull-7 tategaki02">
+<div class="feature-content">
+<div class="feature-content-inner left center_sp horizon" data-animate-in="preset:slideInLeftShort;duration:3000;" data-threshold="0.3">
+<h2 class="lspacing-medium f16 ml-20 lh15">建具・サッシ工事<span class="pc">　　　</span><br class="sp" /><span class="allura f_grn shin ls01 ml-20">Building Fixtures</span></h2>
+<p class="p1 ml-20">
+<strong class="f_grn">建具工事</strong><br />
 窓やドアの交換、新設工事にも対応いたします。<br /><br />
 
-<strong class="f_grn">塗装・防水工事</strong><br />
-建物の美観と機能を保つ工事もお任せください。
+<strong class="f_grn">サッシ工事</strong><br />
+アルミサッシからステンレスサッシまで、幅広く取り扱っております。<br /><br />
+
+<strong class="f_grn">防音・断熱対策</strong><br />
+高性能な建具で、快適な環境づくりをサポートします。
 </p>
-<a href="/contact/" class="button large bkg-btn01 bkg-hover-btn01">> お問い合わせ</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!------ Service Flow Timeline ----------------------------------------------->
+
+<section class="section-block">
+<div class="row">
+<div class="column width-12">
+<h2 class="ls02 f16 center_sp mb-40 horizon" data-animate-in="preset:slideInUpShort;duration:1500ms;">サービスの流れ<br /><span class="allura f_grn shin ls01">Service Flow</span></h2>
+
+<div class="service-flow horizon" data-animate-in="preset:slideInUpShort;duration:1500ms;delay:200ms;">
+<div class="flow-step">
+<div class="flow-step-number">01</div>
+<div class="flow-step-title">お問い合わせ</div>
+<div class="flow-step-desc">お電話またはWebフォームから</div>
+</div>
+
+<div class="flow-step">
+<div class="flow-step-number">02</div>
+<div class="flow-step-title">現地調査</div>
+<div class="flow-step-desc">ご要望をヒアリング</div>
+</div>
+
+<div class="flow-step">
+<div class="flow-step-number">03</div>
+<div class="flow-step-title">お見積り</div>
+<div class="flow-step-desc">最適なプランをご提案</div>
+</div>
+
+<div class="flow-step">
+<div class="flow-step-number">04</div>
+<div class="flow-step-title">施工開始</div>
+<div class="flow-step-desc">確かな技術で施工</div>
+</div>
+
+<div class="flow-step">
+<div class="flow-step-number">05</div>
+<div class="flow-step-title">完成</div>
+<div class="flow-step-desc">検査・お引き渡し</div>
+</div>
+
+<div class="flow-step">
+<div class="flow-step-number">06</div>
+<div class="flow-step-title">アフター</div>
+<div class="flow-step-desc">充実のサポート</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!------ Industry Support ----------------------------------------------->
+
+<section class="section-block bkg-info02">
+<div class="row">
+<div class="column width-12">
+<h2 class="ls02 f16 center_sp mb-40 horizon" data-animate-in="preset:slideInUpShort;duration:1500ms;">対応業種<br /><span class="allura f_grn shin ls01">Industries</span></h2>
+
+<div class="industry-grid horizon" data-animate-in="preset:slideInUpShort;duration:1500ms;delay:200ms;">
+<div class="industry-item">
+<div class="industry-icon"><i class="fa-solid fa-industry"></i></div>
+<div class="industry-name">製造業</div>
+<p class="p1">工場・生産施設</p>
+</div>
+
+<div class="industry-item">
+<div class="industry-icon"><i class="fa-solid fa-warehouse"></i></div>
+<div class="industry-name">物流業</div>
+<p class="p1">倉庫・物流センター</p>
+</div>
+
+<div class="industry-item">
+<div class="industry-icon"><i class="fa-solid fa-store"></i></div>
+<div class="industry-name">商業施設</div>
+<p class="p1">店舗・SC・ホームセンター</p>
+</div>
+
+<div class="industry-item">
+<div class="industry-icon"><i class="fa-solid fa-apple-whole"></i></div>
+<div class="industry-name">食品工場</div>
+<p class="p1">衛生管理対応</p>
+</div>
+
+<div class="industry-item">
+<div class="industry-icon"><i class="fa-solid fa-snowflake"></i></div>
+<div class="industry-name">冷凍・冷蔵</div>
+<p class="p1">温度管理施設</p>
+</div>
+
+<div class="industry-item">
+<div class="industry-icon"><i class="fa-solid fa-car"></i></div>
+<div class="industry-name">自動車部品</div>
+<p class="p1">部品製造工場</p>
+</div>
+
+<div class="industry-item">
+<div class="industry-icon"><i class="fa-solid fa-flask"></i></div>
+<div class="industry-name">化学工場</div>
+<p class="p1">特殊環境対応</p>
+</div>
+
+<div class="industry-item">
+<div class="industry-icon"><i class="fa-solid fa-ellipsis"></i></div>
+<div class="industry-name">その他</div>
+<p class="p1">幅広い業種に対応</p>
+</div>
+</div>
+
+<div class="row">
+<div class="column width-12 center_sp mb-30 mt-40">
+<div class="horizon" data-animate-in="preset:slideInUpShort;duration:1500ms;delay:400ms;">
+<a href="/contact/" class="button xlarge bkg-btn01 bkg-hover-btn01">> お問い合わせ・ご相談はこちら</a>
+</div>
 </div>
 </div>
 </div>
@@ -171,41 +514,45 @@
 
 <!------ Footer ----------------------------------------------->
 
-<footer>
-<div class="footer">
-<div class="content_l tategaki03 scroll-box">
-<h1 class="ls01 shin lh18 f18">現長株式会社<br /><span class="allura ls01 f18 lh15 f_grn">GENCHO Co., Ltd.</span></h1>
-<p class="p2">〒416-0944<br />静岡県富士市横割6-8-1</p>
-<p class="p2">TEL : 0545-61-1344<br />FAX : 0545-61-1343</p>
-<ul class="f_grn p2">
-<li>シートシャッター専門施工</li>
-<li>基礎・土間工事</li>
-<li>テント倉庫改修</li>
-<li>建具・サッシ工事</li>
-</ul>
+<section class="footer">
+
+<div class="footer-bottom">
+<div class="row pt-50">
+<div class="column width-12 center mb-30">
+---　GENCHO GROUP　---
+</div></div>
+
+<div class="row pb-20 horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:400ms;" data-threshold="0.3">
+  <div class="column width-3 mb-10">
+  <a href="https://www.gencho.biz/" target="_blank" class="button large border-charcoal border-hover-theme-blk color-charcoal center w100">> 公式サイト</a>
+  </div>
+  <div class="column width-3 mb-10">
+  <a href="https://www.gencho.biz/services-4" target="_blank" class="button large border-charcoal border-hover-theme-blk color-charcoal center w100">> 事業内容</a>
+  </div>
+  <div class="column width-3 mb-10">
+  <a href="https://www.gencho.biz/%E4%BC%9A%E7%A4%BE%E6%A6%82%E8%A6%81" target="_blank" class="button large border-charcoal border-hover-theme-blk color-charcoal center w100">> 会社概要</a>
+  </div>
+  <div class="column width-3 mb-10">
+  <a href="https://en-gage.net/gencho/" target="_blank" class="button large border-charcoal border-hover-theme-blk color-charcoal center w100">> 採用情報</a>
+  </div>
+  </div>
+
 </div>
-<div class="content_c">
-<div class="logo_area">
-<img src="/img/logo_wht08_new.png" alt="現長株式会社ロゴ" />
+
+<div class="f09 bkg-blk-footer">
+<div class="row">
+<div class="column width-6 f11 left1">
+<a href="/about/">現長について</a> ｜ <a href="/services/">事業内容</a> ｜ <a href="/contact/">お問い合わせ</a>
 </div>
-<ul class="f_wht mb-20 ls01">
-<li><a href="/about/">現長について</a></li>
-<li><a href="/services/">事業内容</a></li>
-<li><a href="/works/">施工実績</a></li>
-<li><a href="/company/">会社情報</a></li>
-<li><a href="/recruit/">採用情報</a></li>
-<li><a href="/contact/">お問い合わせ</a></li>
-<li><a href="/news/">お知らせ</a></li>
-</ul>
-<div class="mb-20">
-<a href="https://twitter.com/gencho416" target="_blank"><span class="fa-brands fa-twitter f_wht f20"></span></a>
-<a href="https://www.facebook.com/gencho416" target="_blank"><span class="fa-brands fa-facebook f_wht f20"></span></a>
+<div class="column width-6 right1">Copyright(C) GENCHO Co., Ltd. , All Rights Reserved.
 </div>
 </div>
-<div class="content_r"></div>
 </div>
-<div class="copy_r"><p class="p2">Copyright © 2025 GENCHO Co., Ltd. All Rights Reserved.</p></div>
-</footer>
+
+</div>
+
+</section>
+<!-- Footer End -->
 
 <!-- Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -230,7 +577,6 @@ $(function(){
                 asidButton.find('img').attr('src', '/img/btn03_open.png');
             };
         });
-
 });
 </script>
 
