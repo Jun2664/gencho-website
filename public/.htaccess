@@ -49,12 +49,6 @@ Options -Indexes
 RewriteEngine On
 RewriteBase /
 
-# メンテナンスページへ強制切り替え
-RewriteCond %{REQUEST_URI} !^/maintenance\.html$
-RewriteCond %{REQUEST_URI} !^/favicon\.ico$
-RewriteCond %{REQUEST_URI} !^/icon180\.png$
-RewriteRule ^.*$ /maintenance.html [L]
-
 # ディレクトリアクセス時にindex.htmlを表示
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !/$
