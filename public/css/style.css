@@ -63,6 +63,120 @@ h5{ font-size: 1.4rem; }
 h6{ font-size: 1.053rem; }
 
 .allura { font-family: 'Allura', cursive; }
+.company-name{ font-family: 'Noto Serif JP', serif; }
+.recruit-roles{
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 2rem;
+}
+.recruit-roles:before,
+.recruit-roles:after{
+	content: none;
+	display: none;
+}
+.recruit-roles .column{
+	float: none;
+	width: auto;
+	padding-left: 0;
+	padding-right: 0;
+	margin-bottom: 0;
+}
+.recruit-role-card{
+	background: linear-gradient(140deg, #ffffff 0%, #f4f7f2 100%);
+	border: 1px solid #e2eadc;
+	border-radius: 1.2rem;
+	padding: 2.2rem 2.4rem;
+	box-shadow: 0 1.2rem 2.8rem rgba(0,0,0,0.06);
+	position: relative;
+	overflow: hidden;
+	min-height: 14rem;
+}
+.recruit-role-card:before{
+	content: "";
+	position: absolute;
+	top: -40%;
+	right: -20%;
+	width: 16rem;
+	height: 16rem;
+	background: radial-gradient(circle, rgba(120,160,80,0.18) 0%, rgba(120,160,80,0) 70%);
+}
+.recruit-role-head{
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+	margin-bottom: 1.2rem;
+}
+.recruit-role-label{
+	font-size: 1.1rem;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #5b7a30;
+	background: #edf5e6;
+	border: 1px solid #d6e4c7;
+	padding: 0.4rem 0.8rem;
+	border-radius: 999px;
+}
+.recruit-role-title{
+	font-size: 1.8rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	color: #1b1b1b;
+	margin: 0;
+}
+.recruit-role-tags{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.8rem;
+}
+.recruit-tag{
+	font-size: 1.2rem;
+	color: #2f3b1f;
+	background: #f9fbf7;
+	border: 1px solid #dfe8d5;
+	padding: 0.4rem 0.9rem;
+	border-radius: 0.8rem;
+}
+.recruit-appeal{
+	background: #f6f8f4;
+	border-left: 4px solid #6a8b3c;
+	padding: 1.6rem 2rem;
+	border-radius: 0.8rem;
+}
+.footer-links{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.footer-links .column{
+	float: none;
+	width: 25%;
+}
+@media only screen and (max-width: 960px){
+	.footer-links .column{
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 600px){
+	.footer-links .column{
+		width: 100%;
+	}
+}
+.works-spacer{
+	height: 200vh;
+	min-height: 1200px;
+}
+@media only screen and (max-width: 960px){
+	.recruit-roles{
+		grid-template-columns: 1fr;
+		gap: 1.4rem;
+	}
+	.recruit-roles .column{
+		width: auto;
+	}
+	.recruit-role-card{
+		padding: 1.8rem;
+	}
+}
 
 a img.linkimg{ background: none; transition: 0.3s; }
 a:hover img.linkimg{ opacity:0.6; filter:alpha(opacity=60); -ms-filter: "alpha( opacity=60 )"; background:none;}
@@ -3959,6 +4073,16 @@ blockquote.border{
 /* Feature Section */
 .feature-2 .feature-image img{
 	width: 100%;
+}
+.about-hero .feature-image,
+.about-hero .feature-image-inner{
+	height: min(100vh, 720px);
+}
+.about-hero .feature-image img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	display: block;
 }
 
 /* Logo Section */

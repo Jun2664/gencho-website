@@ -8,13 +8,10 @@ export default function SiteHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    { label: '現長について', href: '/about' },
-    { label: '事業内容', href: '/services' },
-    { label: '施工実績', href: '/works' },
     { label: '会社情報', href: '/company' },
+    { label: '施工実績', href: '/works' },
     { label: '採用情報', href: '/recruit' },
     { label: 'お問い合わせ', href: '/contact' },
-    { label: 'お知らせ', href: '/news' },
   ]
 
   return (

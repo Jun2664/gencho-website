@@ -58,16 +58,6 @@ export default function SiteFooter() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-blue-400 transition-colors duration-200 text-sm">
-                  現長について
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200 text-sm">
-                  事業内容
-                </Link>
-              </li>
-              <li>
                 <Link href="/works" className="text-gray-400 hover:text-blue-400 transition-colors duration-200 text-sm">
                   施工実績
                 </Link>
@@ -115,14 +105,11 @@ export default function SiteFooter() {
 
         {/* Bottom Border */}
         <div className="border-t border-gray-700 pt-6">
-          <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-            <p className="text-gray-400 mb-4 md:mb-0 text-sm">
+          <div className="flex flex-col items-center text-center gap-4">
+            <p className="text-gray-400 text-sm">
               &copy; {currentYear} 現長株式会社 (GENCHO Co., Ltd.). All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <Link href="/privacy" className="text-gray-400 hover:text-blue-400 transition-colors duration-200 text-sm">
-                プライバシーポリシー
-              </Link>
               <Link href="/sitemap" className="text-gray-400 hover:text-blue-400 transition-colors duration-200 text-sm">
                 サイトマップ
               </Link>
